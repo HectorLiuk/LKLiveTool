@@ -8,7 +8,6 @@
 
 import UIKit
 import Alamofire
-import SnapKit
 
 
 class ViewController: UIViewController {
@@ -25,15 +24,25 @@ class ViewController: UIViewController {
             make.width.height.equalTo(50)
         }
         
+        let image0 = UIImageView()
+        image0.kf_setImageWithURL(NSURL(string: "wwwww"))
+        
         
         Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
-            .validate(statusCode: 200..<300)
-            .validate(contentType: ["application/json"])
+            .responseJSON { response in
+                print(response.request)  // original URL request
+                print(response.response) // URL response
+                print(response.data)     // server data
+                print(response.result)   // result of response serialization
+                
+                if let JSON = response.result.value {
+                    print("JSON: \(JSON)")
+                }
         }
-        
+    
         
     }
 
-
+}
 
 
