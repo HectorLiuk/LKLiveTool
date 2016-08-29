@@ -582,6 +582,7 @@
 				C48907E11D7430DC00B9B0DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C48907E21D7430DC00B9B0DB /* Build configuration list for PBXNativeTarget "LKLiveToolTests" */ = {
 			isa = XCConfigurationList;
@@ -590,6 +591,7 @@
 				C48907E41D7430DC00B9B0DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C48907E51D7430DC00B9B0DB /* Build configuration list for PBXNativeTarget "LKLiveToolUITests" */ = {
 			isa = XCConfigurationList;
@@ -598,6 +600,7 @@
 				C48907E71D7430DC00B9B0DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

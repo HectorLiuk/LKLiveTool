@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -20,6 +22,14 @@ class ViewController: UIViewController {
         viewRed.snp_makeConstraints { (make) in
             make.center.equalTo(self.view)
             make.width.height.equalTo(50)
+        }
+        
+        
+        Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
+            .validate(statusCode: 200..<300)
+            .validate(contentType: ["application/json"])
+            .response { response in
+                print(response)
         }
         
         
