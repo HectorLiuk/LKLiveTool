@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Alamofire
+import SnapKit
 
 
 class ViewController: UIViewController {
@@ -28,13 +29,11 @@ class ViewController: UIViewController {
         Alamofire.request(.GET, "https://httpbin.org/get", parameters: ["foo": "bar"])
             .validate(statusCode: 200..<300)
             .validate(contentType: ["application/json"])
-            .response { response in
-                print(response)
         }
         
         
     }
 
 
-}
+
 
