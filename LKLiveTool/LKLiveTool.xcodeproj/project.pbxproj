@@ -14,6 +14,11 @@
 		C44C0D0F1D7446A40050A648 /* ImportHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D0E1D7446A40050A648 /* ImportHeader.swift */; };
 		C44C0D371D7448DE0050A648 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0D201D7448BB0050A648 /* Kingfisher.framework */; };
 		C44C0D381D7448DE0050A648 /* Kingfisher.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0D201D7448BB0050A648 /* Kingfisher.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C44C0D471D744D300050A648 /* DGElasticPullToRefreshConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D421D744D300050A648 /* DGElasticPullToRefreshConstants.swift */; };
+		C44C0D481D744D300050A648 /* DGElasticPullToRefreshExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D431D744D300050A648 /* DGElasticPullToRefreshExtensions.swift */; };
+		C44C0D491D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D441D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift */; };
+		C44C0D4A1D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D451D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift */; };
+		C44C0D4B1D744D300050A648 /* DGElasticPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D461D744D300050A648 /* DGElasticPullToRefreshView.swift */; };
 		C48907BB1D7430DC00B9B0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */; };
 		C48907BD1D7430DC00B9B0DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907BC1D7430DC00B9B0DB /* ViewController.swift */; };
 		C48907C01D7430DC00B9B0DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48907BE1D7430DC00B9B0DB /* Main.storyboard */; };
@@ -264,13 +269,18 @@
 		C44C0CF01D7443E00050A648 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		C44C0D0E1D7446A40050A648 /* ImportHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportHeader.swift; sourceTree = "<group>"; };
 		C44C0D101D7448BB0050A648 /* Kingfisher.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Kingfisher.xcodeproj; path = "Kingfisher-master/Kingfisher.xcodeproj"; sourceTree = "<group>"; };
+		C44C0D421D744D300050A648 /* DGElasticPullToRefreshConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshConstants.swift; sourceTree = "<group>"; };
+		C44C0D431D744D300050A648 /* DGElasticPullToRefreshExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshExtensions.swift; sourceTree = "<group>"; };
+		C44C0D441D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingView.swift; sourceTree = "<group>"; };
+		C44C0D451D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingViewCircle.swift; sourceTree = "<group>"; };
+		C44C0D461D744D300050A648 /* DGElasticPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshView.swift; sourceTree = "<group>"; };
 		C48907B71D7430DC00B9B0DB /* LKLiveTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKLiveTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		C48907BC1D7430DC00B9B0DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C48907BF1D7430DC00B9B0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C48907C11D7430DC00B9B0DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C48907C11D7430DC00B9B0DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		C48907C41D7430DC00B9B0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		C48907C61D7430DC00B9B0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C48907C61D7430DC00B9B0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		C48907CB1D7430DC00B9B0DB /* LKLiveToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKLiveToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48907CF1D7430DC00B9B0DB /* LKLiveToolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKLiveToolTests.swift; sourceTree = "<group>"; };
 		C48907D11D7430DC00B9B0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -362,6 +372,26 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C44C0D411D744D300050A648 /* DGElasticPullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D421D744D300050A648 /* DGElasticPullToRefreshConstants.swift */,
+				C44C0D431D744D300050A648 /* DGElasticPullToRefreshExtensions.swift */,
+				C44C0D441D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift */,
+				C44C0D451D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift */,
+				C44C0D461D744D300050A648 /* DGElasticPullToRefreshView.swift */,
+			);
+			path = DGElasticPullToRefresh;
+			sourceTree = "<group>";
+		};
+		C44C0D4C1D744DB00050A648 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C48907C11D7430DC00B9B0DB /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		C48907AE1D7430DC00B9B0DB = {
 			isa = PBXGroup;
 			children = (
@@ -386,8 +416,7 @@
 			isa = PBXGroup;
 			children = (
 				C48907BC1D7430DC00B9B0DB /* ViewController.swift */,
-				C48907C11D7430DC00B9B0DB /* Assets.xcassets */,
-				C48907C61D7430DC00B9B0DB /* Info.plist */,
+				C44C0D4C1D744DB00050A648 /* Resource */,
 				C44C0D0D1D7446760050A648 /* Header */,
 				C48907F11D74393B00B9B0DB /* Root */,
 				C48907F01D74374500B9B0DB /* Extension */,
@@ -418,6 +447,7 @@
 		C48907E81D74319700B9B0DB /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				C44C0D411D744D300050A648 /* DGElasticPullToRefresh */,
 				C44C0D101D7448BB0050A648 /* Kingfisher.xcodeproj */,
 				C44C0CF01D7443E00050A648 /* SnapKit.xcodeproj */,
 				C44C0CD31D7442C80050A648 /* Alamofire.xcodeproj */,
@@ -442,6 +472,7 @@
 		C48907F11D74393B00B9B0DB /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				C48907C61D7430DC00B9B0DB /* Info.plist */,
 				C48907C31D7430DC00B9B0DB /* LaunchScreen.storyboard */,
 				C48907BE1D7430DC00B9B0DB /* Main.storyboard */,
 				C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */,
@@ -783,9 +814,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44C0D471D744D300050A648 /* DGElasticPullToRefreshConstants.swift in Sources */,
 				C44C0D0F1D7446A40050A648 /* ImportHeader.swift in Sources */,
+				C44C0D4B1D744D300050A648 /* DGElasticPullToRefreshView.swift in Sources */,
+				C44C0D491D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 				C48907BD1D7430DC00B9B0DB /* ViewController.swift in Sources */,
+				C44C0D4A1D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
 				C48907BB1D7430DC00B9B0DB /* AppDelegate.swift in Sources */,
+				C44C0D481D744D300050A648 /* DGElasticPullToRefreshExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
