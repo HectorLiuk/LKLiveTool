@@ -19,8 +19,21 @@
 		C44C0D491D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D441D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift */; };
 		C44C0D4A1D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D451D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift */; };
 		C44C0D4B1D744D300050A648 /* DGElasticPullToRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D461D744D300050A648 /* DGElasticPullToRefreshView.swift */; };
+		C44C0D5D1D7533E30050A648 /* RAMBounceAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D501D7533E30050A648 /* RAMBounceAnimation.swift */; };
+		C44C0D5E1D7533E30050A648 /* RAMFrameItemAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D521D7533E30050A648 /* RAMFrameItemAnimation.swift */; };
+		C44C0D5F1D7533E30050A648 /* RAMFumeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D541D7533E30050A648 /* RAMFumeAnimation.swift */; };
+		C44C0D601D7533E30050A648 /* RAMRotationAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D561D7533E30050A648 /* RAMRotationAnimation.swift */; };
+		C44C0D611D7533E30050A648 /* RAMTransitionItemAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D581D7533E30050A648 /* RAMTransitionItemAnimations.swift */; };
+		C44C0D621D7533E30050A648 /* RAMAnimatedTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D591D7533E30050A648 /* RAMAnimatedTabBarController.swift */; };
+		C44C0D631D7533E30050A648 /* RAMBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D5B1D7533E30050A648 /* RAMBadge.swift */; };
+		C44C0D641D7533E30050A648 /* RAMItemAnimationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D5C1D7533E30050A648 /* RAMItemAnimationProtocol.swift */; };
+		C44C0D6D1D7555370050A648 /* HomeViewCOntroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D6C1D7555370050A648 /* HomeViewCOntroller.swift */; };
+		C44C0D731D757C720050A648 /* LiveViewCOntroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D721D757C720050A648 /* LiveViewCOntroller.swift */; };
+		C44C0D751D757C880050A648 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D741D757C880050A648 /* MyViewController.swift */; };
+		C44C0D771D757F940050A648 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D761D757F940050A648 /* MainTabBarController.swift */; };
+		C44C0D791D757FEF0050A648 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D781D757FEF0050A648 /* BasicViewController.swift */; };
+		C44C0D7B1D758BF80050A648 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D7A1D758BF80050A648 /* HomeTableViewCell.swift */; };
 		C48907BB1D7430DC00B9B0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */; };
-		C48907BD1D7430DC00B9B0DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907BC1D7430DC00B9B0DB /* ViewController.swift */; };
 		C48907C01D7430DC00B9B0DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48907BE1D7430DC00B9B0DB /* Main.storyboard */; };
 		C48907C21D7430DC00B9B0DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48907C11D7430DC00B9B0DB /* Assets.xcassets */; };
 		C48907C51D7430DC00B9B0DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48907C31D7430DC00B9B0DB /* LaunchScreen.storyboard */; };
@@ -274,9 +287,22 @@
 		C44C0D441D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingView.swift; sourceTree = "<group>"; };
 		C44C0D451D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshLoadingViewCircle.swift; sourceTree = "<group>"; };
 		C44C0D461D744D300050A648 /* DGElasticPullToRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DGElasticPullToRefreshView.swift; sourceTree = "<group>"; };
+		C44C0D501D7533E30050A648 /* RAMBounceAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMBounceAnimation.swift; sourceTree = "<group>"; };
+		C44C0D521D7533E30050A648 /* RAMFrameItemAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMFrameItemAnimation.swift; sourceTree = "<group>"; };
+		C44C0D541D7533E30050A648 /* RAMFumeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMFumeAnimation.swift; sourceTree = "<group>"; };
+		C44C0D561D7533E30050A648 /* RAMRotationAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMRotationAnimation.swift; sourceTree = "<group>"; };
+		C44C0D581D7533E30050A648 /* RAMTransitionItemAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMTransitionItemAnimations.swift; sourceTree = "<group>"; };
+		C44C0D591D7533E30050A648 /* RAMAnimatedTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMAnimatedTabBarController.swift; sourceTree = "<group>"; };
+		C44C0D5B1D7533E30050A648 /* RAMBadge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMBadge.swift; sourceTree = "<group>"; };
+		C44C0D5C1D7533E30050A648 /* RAMItemAnimationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RAMItemAnimationProtocol.swift; sourceTree = "<group>"; };
+		C44C0D6C1D7555370050A648 /* HomeViewCOntroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewCOntroller.swift; sourceTree = "<group>"; };
+		C44C0D721D757C720050A648 /* LiveViewCOntroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveViewCOntroller.swift; sourceTree = "<group>"; };
+		C44C0D741D757C880050A648 /* MyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		C44C0D761D757F940050A648 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		C44C0D781D757FEF0050A648 /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		C44C0D7A1D758BF80050A648 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C48907B71D7430DC00B9B0DB /* LKLiveTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKLiveTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		C48907BC1D7430DC00B9B0DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C48907BF1D7430DC00B9B0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C48907C11D7430DC00B9B0DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		C48907C41D7430DC00B9B0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -392,6 +418,110 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		C44C0D4D1D7533E30050A648 /* RAMAnimatedTabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D4E1D7533E30050A648 /* Animations */,
+				C44C0D591D7533E30050A648 /* RAMAnimatedTabBarController.swift */,
+				C44C0D5A1D7533E30050A648 /* RAMBadge */,
+				C44C0D5C1D7533E30050A648 /* RAMItemAnimationProtocol.swift */,
+			);
+			path = RAMAnimatedTabBarController;
+			sourceTree = "<group>";
+		};
+		C44C0D4E1D7533E30050A648 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D4F1D7533E30050A648 /* BounceAnimation */,
+				C44C0D511D7533E30050A648 /* FrameAnimation */,
+				C44C0D531D7533E30050A648 /* FumeAnimation */,
+				C44C0D551D7533E30050A648 /* RotationAnimation */,
+				C44C0D571D7533E30050A648 /* TransitionAniamtions */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		C44C0D4F1D7533E30050A648 /* BounceAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D501D7533E30050A648 /* RAMBounceAnimation.swift */,
+			);
+			path = BounceAnimation;
+			sourceTree = "<group>";
+		};
+		C44C0D511D7533E30050A648 /* FrameAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D521D7533E30050A648 /* RAMFrameItemAnimation.swift */,
+			);
+			path = FrameAnimation;
+			sourceTree = "<group>";
+		};
+		C44C0D531D7533E30050A648 /* FumeAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D541D7533E30050A648 /* RAMFumeAnimation.swift */,
+			);
+			path = FumeAnimation;
+			sourceTree = "<group>";
+		};
+		C44C0D551D7533E30050A648 /* RotationAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D561D7533E30050A648 /* RAMRotationAnimation.swift */,
+			);
+			path = RotationAnimation;
+			sourceTree = "<group>";
+		};
+		C44C0D571D7533E30050A648 /* TransitionAniamtions */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D581D7533E30050A648 /* RAMTransitionItemAnimations.swift */,
+			);
+			path = TransitionAniamtions;
+			sourceTree = "<group>";
+		};
+		C44C0D5A1D7533E30050A648 /* RAMBadge */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D5B1D7533E30050A648 /* RAMBadge.swift */,
+			);
+			path = RAMBadge;
+			sourceTree = "<group>";
+		};
+		C44C0D651D7553790050A648 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D6C1D7555370050A648 /* HomeViewCOntroller.swift */,
+				C44C0D7A1D758BF80050A648 /* HomeTableViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C44C0D671D7554210050A648 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D721D757C720050A648 /* LiveViewCOntroller.swift */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		C44C0D681D75546B0050A648 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D741D757C880050A648 /* MyViewController.swift */,
+			);
+			path = My;
+			sourceTree = "<group>";
+		};
+		C44C0D691D7554B40050A648 /* Superclass */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D781D757FEF0050A648 /* BasicViewController.swift */,
+			);
+			path = Superclass;
+			sourceTree = "<group>";
+		};
 		C48907AE1D7430DC00B9B0DB = {
 			isa = PBXGroup;
 			children = (
@@ -415,7 +545,7 @@
 		C48907B91D7430DC00B9B0DB /* LKLiveTool */ = {
 			isa = PBXGroup;
 			children = (
-				C48907BC1D7430DC00B9B0DB /* ViewController.swift */,
+				C44C0D691D7554B40050A648 /* Superclass */,
 				C44C0D4C1D744DB00050A648 /* Resource */,
 				C44C0D0D1D7446760050A648 /* Header */,
 				C48907F11D74393B00B9B0DB /* Root */,
@@ -447,6 +577,7 @@
 		C48907E81D74319700B9B0DB /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				C44C0D4D1D7533E30050A648 /* RAMAnimatedTabBarController */,
 				C44C0D411D744D300050A648 /* DGElasticPullToRefresh */,
 				C44C0D101D7448BB0050A648 /* Kingfisher.xcodeproj */,
 				C44C0CF01D7443E00050A648 /* SnapKit.xcodeproj */,
@@ -458,6 +589,9 @@
 		C48907E91D7431AC00B9B0DB /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				C44C0D681D75546B0050A648 /* My */,
+				C44C0D671D7554210050A648 /* Live */,
+				C44C0D651D7553790050A648 /* Home */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -476,6 +610,7 @@
 				C48907C31D7430DC00B9B0DB /* LaunchScreen.storyboard */,
 				C48907BE1D7430DC00B9B0DB /* Main.storyboard */,
 				C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */,
+				C44C0D761D757F940050A648 /* MainTabBarController.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -814,14 +949,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C44C0D5F1D7533E30050A648 /* RAMFumeAnimation.swift in Sources */,
+				C44C0D791D757FEF0050A648 /* BasicViewController.swift in Sources */,
 				C44C0D471D744D300050A648 /* DGElasticPullToRefreshConstants.swift in Sources */,
+				C44C0D771D757F940050A648 /* MainTabBarController.swift in Sources */,
+				C44C0D731D757C720050A648 /* LiveViewCOntroller.swift in Sources */,
+				C44C0D621D7533E30050A648 /* RAMAnimatedTabBarController.swift in Sources */,
 				C44C0D0F1D7446A40050A648 /* ImportHeader.swift in Sources */,
+				C44C0D601D7533E30050A648 /* RAMRotationAnimation.swift in Sources */,
 				C44C0D4B1D744D300050A648 /* DGElasticPullToRefreshView.swift in Sources */,
+				C44C0D7B1D758BF80050A648 /* HomeTableViewCell.swift in Sources */,
+				C44C0D751D757C880050A648 /* MyViewController.swift in Sources */,
+				C44C0D631D7533E30050A648 /* RAMBadge.swift in Sources */,
+				C44C0D6D1D7555370050A648 /* HomeViewCOntroller.swift in Sources */,
 				C44C0D491D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
-				C48907BD1D7430DC00B9B0DB /* ViewController.swift in Sources */,
 				C44C0D4A1D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
 				C48907BB1D7430DC00B9B0DB /* AppDelegate.swift in Sources */,
 				C44C0D481D744D300050A648 /* DGElasticPullToRefreshExtensions.swift in Sources */,
+				C44C0D5E1D7533E30050A648 /* RAMFrameItemAnimation.swift in Sources */,
+				C44C0D5D1D7533E30050A648 /* RAMBounceAnimation.swift in Sources */,
+				C44C0D611D7533E30050A648 /* RAMTransitionItemAnimations.swift in Sources */,
+				C44C0D641D7533E30050A648 /* RAMItemAnimationProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
