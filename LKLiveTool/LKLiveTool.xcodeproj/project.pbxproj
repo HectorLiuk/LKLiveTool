@@ -33,12 +33,24 @@
 		C44C0D771D757F940050A648 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D761D757F940050A648 /* MainTabBarController.swift */; };
 		C44C0D791D757FEF0050A648 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D781D757FEF0050A648 /* BasicViewController.swift */; };
 		C44C0D7B1D758BF80050A648 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D7A1D758BF80050A648 /* HomeTableViewCell.swift */; };
+		C44C0D821D76A94F0050A648 /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D811D76A94F0050A648 /* UIColor+HEX.swift */; };
+		C44C0D841D76B5960050A648 /* NetWork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D831D76B5960050A648 /* NetWork.swift */; };
+		C44C0D921D76BB8C0050A648 /* Reflect+ArcFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D871D76BB8C0050A648 /* Reflect+ArcFile.swift */; };
+		C44C0D931D76BB8C0050A648 /* Reflect+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D891D76BB8C0050A648 /* Reflect+Parse.swift */; };
+		C44C0D941D76BB8C0050A648 /* Reflect+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D8B1D76BB8C0050A648 /* Reflect+Convert.swift */; };
+		C44C0D951D76BB8C0050A648 /* Reflect+Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D8D1D76BB8C0050A648 /* Reflect+Class.swift */; };
+		C44C0D961D76BB8C0050A648 /* Reflect+Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D8E1D76BB8C0050A648 /* Reflect+Other.swift */; };
+		C44C0D971D76BB8C0050A648 /* Reflect+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D8F1D76BB8C0050A648 /* Reflect+Property.swift */; };
+		C44C0D981D76BB8C0050A648 /* Reflect+Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D901D76BB8C0050A648 /* Reflect+Type.swift */; };
+		C44C0D991D76BB8C0050A648 /* Reflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D911D76BB8C0050A648 /* Reflect.swift */; };
+		C44C0D9B1D76BBAF0050A648 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D9A1D76BBAF0050A648 /* HomeModel.swift */; };
 		C48907BB1D7430DC00B9B0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */; };
 		C48907C01D7430DC00B9B0DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48907BE1D7430DC00B9B0DB /* Main.storyboard */; };
 		C48907C21D7430DC00B9B0DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48907C11D7430DC00B9B0DB /* Assets.xcassets */; };
 		C48907C51D7430DC00B9B0DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48907C31D7430DC00B9B0DB /* LaunchScreen.storyboard */; };
 		C48907D01D7430DC00B9B0DB /* LKLiveToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907CF1D7430DC00B9B0DB /* LKLiveToolTests.swift */; };
 		C48907DB1D7430DC00B9B0DB /* LKLiveToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907DA1D7430DC00B9B0DB /* LKLiveToolUITests.swift */; };
+		C4AD60981D76D7B500091BCC /* commonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60971D76D7B500091BCC /* commonHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -301,6 +313,17 @@
 		C44C0D761D757F940050A648 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		C44C0D781D757FEF0050A648 /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		C44C0D7A1D758BF80050A648 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		C44C0D811D76A94F0050A648 /* UIColor+HEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX.swift"; sourceTree = "<group>"; };
+		C44C0D831D76B5960050A648 /* NetWork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWork.swift; sourceTree = "<group>"; };
+		C44C0D871D76BB8C0050A648 /* Reflect+ArcFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+ArcFile.swift"; sourceTree = "<group>"; };
+		C44C0D891D76BB8C0050A648 /* Reflect+Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Parse.swift"; sourceTree = "<group>"; };
+		C44C0D8B1D76BB8C0050A648 /* Reflect+Convert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Convert.swift"; sourceTree = "<group>"; };
+		C44C0D8D1D76BB8C0050A648 /* Reflect+Class.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Class.swift"; sourceTree = "<group>"; };
+		C44C0D8E1D76BB8C0050A648 /* Reflect+Other.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Other.swift"; sourceTree = "<group>"; };
+		C44C0D8F1D76BB8C0050A648 /* Reflect+Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Property.swift"; sourceTree = "<group>"; };
+		C44C0D901D76BB8C0050A648 /* Reflect+Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Type.swift"; sourceTree = "<group>"; };
+		C44C0D911D76BB8C0050A648 /* Reflect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reflect.swift; sourceTree = "<group>"; };
+		C44C0D9A1D76BBAF0050A648 /* HomeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
 		C48907B71D7430DC00B9B0DB /* LKLiveTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKLiveTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		C48907BF1D7430DC00B9B0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -313,6 +336,7 @@
 		C48907D61D7430DC00B9B0DB /* LKLiveToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKLiveToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48907DA1D7430DC00B9B0DB /* LKLiveToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKLiveToolUITests.swift; sourceTree = "<group>"; };
 		C48907DC1D7430DC00B9B0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4AD60971D76D7B500091BCC /* commonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commonHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -375,6 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				C44C0D0E1D7446A40050A648 /* ImportHeader.swift */,
+				C4AD60971D76D7B500091BCC /* commonHeader.swift */,
 			);
 			path = Header;
 			sourceTree = "<group>";
@@ -493,6 +518,7 @@
 			isa = PBXGroup;
 			children = (
 				C44C0D6C1D7555370050A648 /* HomeViewCOntroller.swift */,
+				C44C0D9A1D76BBAF0050A648 /* HomeModel.swift */,
 				C44C0D7A1D758BF80050A648 /* HomeTableViewCell.swift */,
 			);
 			path = Home;
@@ -522,6 +548,61 @@
 			path = Superclass;
 			sourceTree = "<group>";
 		};
+		C44C0D7E1D768C6A0050A648 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D831D76B5960050A648 /* NetWork.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		C44C0D851D76BB8B0050A648 /* Reflect */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D861D76BB8C0050A648 /* Coding */,
+				C44C0D881D76BB8C0050A648 /* Dict2Model */,
+				C44C0D8A1D76BB8C0050A648 /* Model2Dict */,
+				C44C0D8C1D76BB8C0050A648 /* Reflect */,
+				C44C0D911D76BB8C0050A648 /* Reflect.swift */,
+			);
+			path = Reflect;
+			sourceTree = "<group>";
+		};
+		C44C0D861D76BB8C0050A648 /* Coding */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D871D76BB8C0050A648 /* Reflect+ArcFile.swift */,
+			);
+			path = Coding;
+			sourceTree = "<group>";
+		};
+		C44C0D881D76BB8C0050A648 /* Dict2Model */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D891D76BB8C0050A648 /* Reflect+Parse.swift */,
+			);
+			path = Dict2Model;
+			sourceTree = "<group>";
+		};
+		C44C0D8A1D76BB8C0050A648 /* Model2Dict */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D8B1D76BB8C0050A648 /* Reflect+Convert.swift */,
+			);
+			path = Model2Dict;
+			sourceTree = "<group>";
+		};
+		C44C0D8C1D76BB8C0050A648 /* Reflect */ = {
+			isa = PBXGroup;
+			children = (
+				C44C0D8D1D76BB8C0050A648 /* Reflect+Class.swift */,
+				C44C0D8E1D76BB8C0050A648 /* Reflect+Other.swift */,
+				C44C0D8F1D76BB8C0050A648 /* Reflect+Property.swift */,
+				C44C0D901D76BB8C0050A648 /* Reflect+Type.swift */,
+			);
+			path = Reflect;
+			sourceTree = "<group>";
+		};
 		C48907AE1D7430DC00B9B0DB = {
 			isa = PBXGroup;
 			children = (
@@ -545,6 +626,7 @@
 		C48907B91D7430DC00B9B0DB /* LKLiveTool */ = {
 			isa = PBXGroup;
 			children = (
+				C44C0D7E1D768C6A0050A648 /* Tool */,
 				C44C0D691D7554B40050A648 /* Superclass */,
 				C44C0D4C1D744DB00050A648 /* Resource */,
 				C44C0D0D1D7446760050A648 /* Header */,
@@ -577,6 +659,7 @@
 		C48907E81D74319700B9B0DB /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				C44C0D851D76BB8B0050A648 /* Reflect */,
 				C44C0D4D1D7533E30050A648 /* RAMAnimatedTabBarController */,
 				C44C0D411D744D300050A648 /* DGElasticPullToRefresh */,
 				C44C0D101D7448BB0050A648 /* Kingfisher.xcodeproj */,
@@ -599,6 +682,7 @@
 		C48907F01D74374500B9B0DB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C44C0D811D76A94F0050A648 /* UIColor+HEX.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -953,23 +1037,35 @@
 				C44C0D791D757FEF0050A648 /* BasicViewController.swift in Sources */,
 				C44C0D471D744D300050A648 /* DGElasticPullToRefreshConstants.swift in Sources */,
 				C44C0D771D757F940050A648 /* MainTabBarController.swift in Sources */,
+				C44C0D9B1D76BBAF0050A648 /* HomeModel.swift in Sources */,
+				C44C0D931D76BB8C0050A648 /* Reflect+Parse.swift in Sources */,
 				C44C0D731D757C720050A648 /* LiveViewCOntroller.swift in Sources */,
+				C4AD60981D76D7B500091BCC /* commonHeader.swift in Sources */,
 				C44C0D621D7533E30050A648 /* RAMAnimatedTabBarController.swift in Sources */,
+				C44C0D951D76BB8C0050A648 /* Reflect+Class.swift in Sources */,
 				C44C0D0F1D7446A40050A648 /* ImportHeader.swift in Sources */,
 				C44C0D601D7533E30050A648 /* RAMRotationAnimation.swift in Sources */,
 				C44C0D4B1D744D300050A648 /* DGElasticPullToRefreshView.swift in Sources */,
+				C44C0D981D76BB8C0050A648 /* Reflect+Type.swift in Sources */,
 				C44C0D7B1D758BF80050A648 /* HomeTableViewCell.swift in Sources */,
+				C44C0D991D76BB8C0050A648 /* Reflect.swift in Sources */,
 				C44C0D751D757C880050A648 /* MyViewController.swift in Sources */,
 				C44C0D631D7533E30050A648 /* RAMBadge.swift in Sources */,
 				C44C0D6D1D7555370050A648 /* HomeViewCOntroller.swift in Sources */,
 				C44C0D491D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 				C44C0D4A1D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
+				C44C0D821D76A94F0050A648 /* UIColor+HEX.swift in Sources */,
 				C48907BB1D7430DC00B9B0DB /* AppDelegate.swift in Sources */,
 				C44C0D481D744D300050A648 /* DGElasticPullToRefreshExtensions.swift in Sources */,
 				C44C0D5E1D7533E30050A648 /* RAMFrameItemAnimation.swift in Sources */,
 				C44C0D5D1D7533E30050A648 /* RAMBounceAnimation.swift in Sources */,
 				C44C0D611D7533E30050A648 /* RAMTransitionItemAnimations.swift in Sources */,
 				C44C0D641D7533E30050A648 /* RAMItemAnimationProtocol.swift in Sources */,
+				C44C0D971D76BB8C0050A648 /* Reflect+Property.swift in Sources */,
+				C44C0D961D76BB8C0050A648 /* Reflect+Other.swift in Sources */,
+				C44C0D941D76BB8C0050A648 /* Reflect+Convert.swift in Sources */,
+				C44C0D921D76BB8C0050A648 /* Reflect+ArcFile.swift in Sources */,
+				C44C0D841D76B5960050A648 /* NetWork.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1134,6 +1230,7 @@
 				INFOPLIST_FILE = LKLiveTool/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lk.LKLiveTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
