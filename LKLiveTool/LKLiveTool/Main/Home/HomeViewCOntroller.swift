@@ -115,8 +115,9 @@ extension HomeViewCOntroller : UITableViewDelegate ,UITableViewDataSource{
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        let vc = UIViewController()
-//        vc.hidesBottomBarWhenPushed = true
-//        navigationController?.pushViewController(vc, animated: true)
+        let vc = UIViewController()
+        vc.hidesBottomBarWhenPushed = true
+        tabBarController?.tabBar.hidden = true
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

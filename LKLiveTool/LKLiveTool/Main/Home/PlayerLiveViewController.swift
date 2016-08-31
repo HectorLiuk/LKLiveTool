@@ -13,7 +13,9 @@ class PlayerLiveViewController: BasicViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // Hide TabBar
+        let animatedTabBar = self.tabBarController as! MainTabBarController
+        animatedTabBar.animationTabBarHidden(true)
     }
 
     override func didReceiveMemoryWarning() {
