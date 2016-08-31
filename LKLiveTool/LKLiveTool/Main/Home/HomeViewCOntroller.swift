@@ -17,11 +17,15 @@ class HomeViewCOntroller: BasicViewController {
     
     lazy var refreshView: DGElasticPullToRefreshLoadingViewCircle = {
         let refreshView = DGElasticPullToRefreshLoadingViewCircle()
-        refreshView.tintColor = UIColor.hexColor("#4ED3C8")
+        refreshView.tintColor = UIColor.whiteColor()
         
         return refreshView
     }()
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +41,8 @@ class HomeViewCOntroller: BasicViewController {
         
     }
     
+    
+    
     private func addRefreshView() {
         tableView.dg_addPullToRefreshWithActionHandler({ [weak self] () -> Void in
             
@@ -44,7 +50,7 @@ class HomeViewCOntroller: BasicViewController {
             
             }, loadingView: self.refreshView)
         
-        tableView.dg_setPullToRefreshFillColor(UIColor.hexColor("#394359"))
+        tableView.dg_setPullToRefreshFillColor(NavBGColor)
         tableView.dg_setPullToRefreshBackgroundColor(tableView.backgroundColor!)
         
     }
@@ -73,6 +79,17 @@ class HomeViewCOntroller: BasicViewController {
         
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        super.prepareForSegue(segue, sender: sender)
+        //判断segue.identifier
+        if segue.identifier == "pushDetail"{
+//            let page2 = segue.destinationViewController
+            
+
+        }
+    }
+    
+    
 }
 
 
@@ -97,6 +114,9 @@ extension HomeViewCOntroller : UITableViewDelegate ,UITableViewDataSource{
         
     }
     
-    
-    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        let vc = UIViewController()
+//        vc.hidesBottomBarWhenPushed = true
+//        navigationController?.pushViewController(vc, animated: true)
+    }
 }

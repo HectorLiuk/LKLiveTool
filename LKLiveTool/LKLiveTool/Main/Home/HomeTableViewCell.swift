@@ -47,6 +47,7 @@ class HomeTableViewCell: UITableViewCell {
         titleLabel.textColor = homeTitleColor
         locationLabel.textColor = homeTitleColor
         
+        peopleCountLabel.textColor = homePeopleColor
         
     }
 

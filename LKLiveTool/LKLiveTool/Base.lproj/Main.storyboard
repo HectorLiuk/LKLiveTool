@@ -24,6 +24,25 @@
             </objects>
             <point key="canvasLocation" x="-123" y="60"/>
         </scene>
+        <!--Player Live View Controller-->
+        <scene sceneID="Rfi-hs-DNv">
+            <objects>
+                <viewController id="4kn-qf-Zrg" customClass="PlayerLiveViewController" customModule="LKLiveTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qUc-ro-DWZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="tYM-Rs-LN1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AS9-1R-DlW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="CXR-ud-qQn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aex-UK-IqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1509.5" y="26.5"/>
+        </scene>
         <!--看直播-->
         <scene sceneID="Ddo-XR-z4G">
             <objects>
@@ -36,18 +55,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l5p-ez-zMn">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsMultipleSelection="YES" rowHeight="350" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l5p-ez-zMn">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="350" id="Zsh-Iq-MZM" customClass="HomeTableViewCell" customModule="LKLiveTool" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HomeTableViewCell" rowHeight="350" id="Zsh-Iq-MZM" customClass="HomeTableViewCell" customModule="LKLiveTool" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="350"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zsh-Iq-MZM" id="AAo-TZ-MTh">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="350"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s8u-KI-d0m">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s8u-KI-d0m">
                                                     <rect key="frame" x="10" y="10" width="40" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="40" id="0CD-tB-eHg"/>
@@ -81,7 +100,7 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lYx-h7-FWI">
+                                                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lYx-h7-FWI">
                                                     <rect key="frame" x="0.0" y="56" width="375" height="294"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在看" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lz-NR-47h">
@@ -144,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S5q-jT-TnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1009.5" y="23.5"/>
+            <point key="canvasLocation" x="-977.5" y="26.5"/>
         </scene>
         <!--我的设置-->
         <scene sceneID="vF9-o1-nk0">
@@ -182,7 +201,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Gw-lD-5nZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-123" y="-1882"/>
+            <point key="canvasLocation" x="-77" y="-2248"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wfO-Y4-Arg">
@@ -228,7 +247,7 @@
         <!--首页-->
         <scene sceneID="Lp5-rh-BdL">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y1s-sx-Emb" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y1s-sx-Emb" customClass="MainNavigationViewController" customModule="LKLiveTool" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" image="icon_pin_00160" id="lKj-SV-uw7" customClass="RAMAnimatedTabBarItem" customModule="LKLiveTool" customModuleProvider="target">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">

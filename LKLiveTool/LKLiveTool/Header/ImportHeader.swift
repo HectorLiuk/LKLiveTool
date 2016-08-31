@@ -22,6 +22,11 @@ let HomeUrl = "http://service.ingkee.com/api/live/gettop?imsi=&uid=17800399&prot
 // 图片
 let MainImageUrl = "http://img.meelive.cn/"
 
+
+
+
+
+
 // MARK: DEBUG打印
 func DEBUGLOG<T>(message: T, file: NSString = #file, method: String = #function, line: Int = #line)
 {

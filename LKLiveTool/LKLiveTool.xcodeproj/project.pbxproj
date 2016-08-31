@@ -51,6 +51,8 @@
 		C48907D01D7430DC00B9B0DB /* LKLiveToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907CF1D7430DC00B9B0DB /* LKLiveToolTests.swift */; };
 		C48907DB1D7430DC00B9B0DB /* LKLiveToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907DA1D7430DC00B9B0DB /* LKLiveToolUITests.swift */; };
 		C4AD60981D76D7B500091BCC /* commonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60971D76D7B500091BCC /* commonHeader.swift */; };
+		C4AD60B21D76D9D700091BCC /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */; };
+		C4AD60B41D76E63F00091BCC /* PlayerLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -337,6 +339,8 @@
 		C48907DA1D7430DC00B9B0DB /* LKLiveToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKLiveToolUITests.swift; sourceTree = "<group>"; };
 		C48907DC1D7430DC00B9B0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4AD60971D76D7B500091BCC /* commonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commonHeader.swift; sourceTree = "<group>"; };
+		C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
+		C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLiveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -520,6 +524,7 @@
 				C44C0D6C1D7555370050A648 /* HomeViewCOntroller.swift */,
 				C44C0D9A1D76BBAF0050A648 /* HomeModel.swift */,
 				C44C0D7A1D758BF80050A648 /* HomeTableViewCell.swift */,
+				C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -695,6 +700,7 @@
 				C48907BE1D7430DC00B9B0DB /* Main.storyboard */,
 				C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */,
 				C44C0D761D757F940050A648 /* MainTabBarController.swift */,
+				C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -1038,6 +1044,7 @@
 				C44C0D471D744D300050A648 /* DGElasticPullToRefreshConstants.swift in Sources */,
 				C44C0D771D757F940050A648 /* MainTabBarController.swift in Sources */,
 				C44C0D9B1D76BBAF0050A648 /* HomeModel.swift in Sources */,
+				C4AD60B21D76D9D700091BCC /* MainNavigationViewController.swift in Sources */,
 				C44C0D931D76BB8C0050A648 /* Reflect+Parse.swift in Sources */,
 				C44C0D731D757C720050A648 /* LiveViewCOntroller.swift in Sources */,
 				C4AD60981D76D7B500091BCC /* commonHeader.swift in Sources */,
@@ -1059,6 +1066,7 @@
 				C44C0D481D744D300050A648 /* DGElasticPullToRefreshExtensions.swift in Sources */,
 				C44C0D5E1D7533E30050A648 /* RAMFrameItemAnimation.swift in Sources */,
 				C44C0D5D1D7533E30050A648 /* RAMBounceAnimation.swift in Sources */,
+				C4AD60B41D76E63F00091BCC /* PlayerLiveViewController.swift in Sources */,
 				C44C0D611D7533E30050A648 /* RAMTransitionItemAnimations.swift in Sources */,
 				C44C0D641D7533E30050A648 /* RAMItemAnimationProtocol.swift in Sources */,
 				C44C0D971D76BB8C0050A648 /* Reflect+Property.swift in Sources */,
