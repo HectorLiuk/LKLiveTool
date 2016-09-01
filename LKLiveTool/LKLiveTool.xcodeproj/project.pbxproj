@@ -46,19 +46,15 @@
 		C44C0D9B1D76BBAF0050A648 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C44C0D9A1D76BBAF0050A648 /* HomeModel.swift */; };
 		C48907BB1D7430DC00B9B0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */; };
 		C48907C01D7430DC00B9B0DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48907BE1D7430DC00B9B0DB /* Main.storyboard */; };
-		C48907C21D7430DC00B9B0DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48907C11D7430DC00B9B0DB /* Assets.xcassets */; };
 		C48907C51D7430DC00B9B0DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48907C31D7430DC00B9B0DB /* LaunchScreen.storyboard */; };
 		C48907D01D7430DC00B9B0DB /* LKLiveToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907CF1D7430DC00B9B0DB /* LKLiveToolTests.swift */; };
 		C48907DB1D7430DC00B9B0DB /* LKLiveToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907DA1D7430DC00B9B0DB /* LKLiveToolUITests.swift */; };
 		C4AD60981D76D7B500091BCC /* commonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60971D76D7B500091BCC /* commonHeader.swift */; };
 		C4AD60B21D76D9D700091BCC /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */; };
 		C4AD60B41D76E63F00091BCC /* PlayerLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */; };
-<<<<<<< HEAD
 		C4AD60BC1D7806BD00091BCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AD60BB1D7806BD00091BCC /* libz.tbd */; };
-		C4AD60BF1D78427500091BCC /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AD60BD1D7841AE00091BCC /* IJKMediaFramework.framework */; };
-		C4AD60C01D78427500091BCC /* IJKMediaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4AD60BD1D7841AE00091BCC /* IJKMediaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-=======
->>>>>>> parent of 6159f8a... 视频播放
+		C4E4B1F21D787F4C0054C139 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4E4B1F11D787F4C0054C139 /* IJKMediaFramework.framework */; };
+		C4E4B1F51D787FB80054C139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4E4B1F41D787FB80054C139 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -291,7 +287,6 @@
 				C44C0CED1D7442F70050A648 /* Alamofire.framework in Embed Frameworks */,
 				C44C0D381D7448DE0050A648 /* Kingfisher.framework in Embed Frameworks */,
 				C44C0D091D7443F80050A648 /* SnapKit.framework in Embed Frameworks */,
-				C4AD60C01D78427500091BCC /* IJKMediaFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +331,6 @@
 		C48907B71D7430DC00B9B0DB /* LKLiveTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKLiveTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		C48907BF1D7430DC00B9B0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C48907C11D7430DC00B9B0DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		C48907C41D7430DC00B9B0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C48907C61D7430DC00B9B0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		C48907CB1D7430DC00B9B0DB /* LKLiveToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKLiveToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -348,12 +342,10 @@
 		C4AD60971D76D7B500091BCC /* commonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commonHeader.swift; sourceTree = "<group>"; };
 		C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLiveViewController.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		C4AD60B71D78044000091BCC /* LKLiveTool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LKLiveTool-Bridging-Header.h"; path = "../Main/Home/LKLiveTool-Bridging-Header.h"; sourceTree = "<group>"; };
 		C4AD60BB1D7806BD00091BCC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		C4AD60BD1D7841AE00091BCC /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
-=======
->>>>>>> parent of 6159f8a... 视频播放
+		C4E4B1EE1D787D900054C139 /* LKLiveTool-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LKLiveTool-Bridging-Header.h"; sourceTree = "<group>"; };
+		C4E4B1F11D787F4C0054C139 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		C4E4B1F41D787FB80054C139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -361,9 +353,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AD60BC1D7806BD00091BCC /* libz.tbd in Frameworks */,
 				C44C0CEC1D7442F70050A648 /* Alamofire.framework in Frameworks */,
 				C44C0D371D7448DE0050A648 /* Kingfisher.framework in Frameworks */,
-				C4AD60BF1D78427500091BCC /* IJKMediaFramework.framework in Frameworks */,
+				C4E4B1F21D787F4C0054C139 /* IJKMediaFramework.framework in Frameworks */,
 				C44C0D081D7443F80050A648 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +409,7 @@
 		C44C0D0D1D7446760050A648 /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				C4E4B1EE1D787D900054C139 /* LKLiveTool-Bridging-Header.h */,
 				C44C0D0E1D7446A40050A648 /* ImportHeader.swift */,
 				C4AD60971D76D7B500091BCC /* commonHeader.swift */,
 			);
@@ -456,7 +450,7 @@
 		C44C0D4C1D744DB00050A648 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				C48907C11D7430DC00B9B0DB /* Assets.xcassets */,
+				C4E4B1F41D787FB80054C139 /* Assets.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -678,11 +672,8 @@
 		C48907E81D74319700B9B0DB /* Vender */ = {
 			isa = PBXGroup;
 			children = (
-<<<<<<< HEAD
+				C4E4B1F11D787F4C0054C139 /* IJKMediaFramework.framework */,
 				C4AD60BB1D7806BD00091BCC /* libz.tbd */,
-				C4AD60BD1D7841AE00091BCC /* IJKMediaFramework.framework */,
-=======
->>>>>>> parent of 6159f8a... 视频播放
 				C44C0D851D76BB8B0050A648 /* Reflect */,
 				C44C0D4D1D7533E30050A648 /* RAMAnimatedTabBarController */,
 				C44C0D411D744D300050A648 /* DGElasticPullToRefresh */,
@@ -1032,7 +1023,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C48907C51D7430DC00B9B0DB /* LaunchScreen.storyboard in Resources */,
-				C48907C21D7430DC00B9B0DB /* Assets.xcassets in Resources */,
+				C4E4B1F51D787FB80054C139 /* Assets.xcassets in Resources */,
 				C48907C01D7430DC00B9B0DB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1253,13 +1244,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jiang jiayi (SHX74297A2)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LKLiveTool/Vender",
+					"$(PROJECT_DIR)/LKLiveTool/Main",
+				);
 				INFOPLIST_FILE = LKLiveTool/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lk.LKLiveTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LKLiveTool/Header/LKLiveTool-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -1267,12 +1267,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jiang jiayi (SHX74297A2)";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LKLiveTool/Vender",
+					"$(PROJECT_DIR)/LKLiveTool/Main",
+				);
 				INFOPLIST_FILE = LKLiveTool/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lk.LKLiveTool;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LKLiveTool/Header/LKLiveTool-Bridging-Header.h";
 			};
 			name = Release;
 		};
