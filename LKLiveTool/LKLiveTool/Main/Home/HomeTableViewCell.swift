@@ -27,10 +27,10 @@ class HomeTableViewCell: UITableViewCell {
             peopleCountLabel.text = homeData!.online_users.stringValue
             iconImage.kf_setImageWithURL(NSURL(string: MainImageUrl + (homeData!.creator.portrait)!),
                                          placeholderImage: nil,
-                                         optionsInfo: [.ForceRefresh])
+                                         optionsInfo: nil)
             mainImage.kf_setImageWithURL(NSURL(string: MainImageUrl + (homeData!.creator.portrait)!),
                                          placeholderImage: nil,
-                                         optionsInfo: [.ForceRefresh])
+                                         optionsInfo: nil)
         }
     }
     

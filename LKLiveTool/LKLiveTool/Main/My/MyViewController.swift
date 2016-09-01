@@ -9,6 +9,15 @@
 
 class MyViewController: BasicViewController {
     
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if tabBarController?.tabBar.hidden == true {
+            tabBarController?.tabBar.hidden = false
+            let animatedTabBar = self.tabBarController as! MainTabBarController
+            animatedTabBar.animationTabBarHidden(false)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

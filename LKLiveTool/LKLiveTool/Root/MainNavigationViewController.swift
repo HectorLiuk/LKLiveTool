@@ -20,6 +20,10 @@ class MainNavigationViewController: UINavigationController {
         navigationBar.titleTextAttributes=[NSForegroundColorAttributeName:
             UIColor.whiteColor(),NSFontAttributeName:UIFont.boldSystemFontOfSize(20)];
         
+        navigationBar.tintColor = UIColor.whiteColor()
+        
+        navigationController?.navigationBar.barStyle = .Black;
+        
     }
 
     override func viewDidLoad() {

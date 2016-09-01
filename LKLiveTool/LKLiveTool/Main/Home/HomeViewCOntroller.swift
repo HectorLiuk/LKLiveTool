@@ -24,6 +24,12 @@ class HomeViewCOntroller: BasicViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        if tabBarController?.tabBar.hidden == true {
+            tabBarController?.tabBar.hidden = false
+            let animatedTabBar = self.tabBarController as! MainTabBarController
+            animatedTabBar.animationTabBarHidden(false)
+        }
+        
         tableView.reloadData()
     }
     
@@ -33,9 +39,6 @@ class HomeViewCOntroller: BasicViewController {
         requestHomeList()
         
         addRefreshView()
-        
-        
-        
         
         
         
@@ -115,9 +118,9 @@ extension HomeViewCOntroller : UITableViewDelegate ,UITableViewDataSource{
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let vc = UIViewController()
-        vc.hidesBottomBarWhenPushed = true
-        tabBarController?.tabBar.hidden = true
-        navigationController?.pushViewController(vc, animated: true)
+//        let vc = UIViewController()
+//        vc.hidesBottomBarWhenPushed = true
+//        tabBarController?.tabBar.hidden = true
+//        navigationController?.pushViewController(vc, animated: true)
     }
 }

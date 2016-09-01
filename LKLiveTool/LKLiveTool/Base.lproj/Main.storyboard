@@ -22,7 +22,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eqK-sV-Yce" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-123" y="60"/>
+            <point key="canvasLocation" x="-17" y="60"/>
         </scene>
         <!--Player Live View Controller-->
         <scene sceneID="Rfi-hs-DNv">
@@ -33,15 +33,36 @@
                         <viewControllerLayoutGuide type="bottom" id="tYM-Rs-LN1"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AS9-1R-DlW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="CXR-ud-qQn"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aex-UK-IqW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1509.5" y="26.5"/>
+            <point key="canvasLocation" x="-2013.5" y="1034.5"/>
+        </scene>
+        <!--搜索-->
+        <scene sceneID="SZg-dO-f9X">
+            <objects>
+                <viewController id="O5s-f5-6GC" customClass="BasicViewController" customModule="LKLiveTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="27k-IP-RiU"/>
+                        <viewControllerLayoutGuide type="bottom" id="rMd-TY-38A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GFO-7t-XZz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="搜索" id="cEh-nX-1on"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uv6-hd-ivm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2759.5" y="121.5"/>
         </scene>
         <!--看直播-->
         <scene sceneID="Ddo-XR-z4G">
@@ -138,6 +159,7 @@
                                             <outlet property="mainImage" destination="lYx-h7-FWI" id="QZj-2w-Mws"/>
                                             <outlet property="peopleCountLabel" destination="H8e-A8-fsD" id="ZxD-ed-zlk"/>
                                             <outlet property="titleLabel" destination="G15-D6-e9R" id="fRn-i5-rm9"/>
+                                            <segue destination="4kn-qf-Zrg" kind="push" id="kDi-jn-Ddh"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -155,7 +177,20 @@
                             <constraint firstItem="l5p-ez-zMn" firstAttribute="top" secondItem="rCh-wU-69Z" secondAttribute="bottom" id="lXE-nr-WMd"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="看直播" id="FES-dd-DzB"/>
+                    <navigationItem key="navigationItem" title="看直播" id="FES-dd-DzB">
+                        <barButtonItem key="leftBarButtonItem" image="search_" id="re6-Qg-Mru">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="O5s-f5-6GC" kind="push" id="u8u-qz-rhv"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" image="me_other_chat" style="done" id="b5t-Di-QwY">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="Oz6-fA-gYn" kind="push" id="ybE-I9-epw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="tableView" destination="l5p-ez-zMn" id="yJc-gU-bKL"/>
@@ -163,7 +198,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S5q-jT-TnJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-977.5" y="26.5"/>
+            <point key="canvasLocation" x="-1873.5" y="10.5"/>
+        </scene>
+        <!--消息-->
+        <scene sceneID="2dF-Y5-oGY">
+            <objects>
+                <viewController id="Oz6-fA-gYn" customClass="BasicViewController" customModule="LKLiveTool" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oql-uI-5Wy"/>
+                        <viewControllerLayoutGuide type="bottom" id="O12-73-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pd8-ca-FZD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="消息" id="Ivb-SY-2Xz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0EU-bn-4MV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1047.5" y="10.5"/>
         </scene>
         <!--我的设置-->
         <scene sceneID="vF9-o1-nk0">
@@ -280,7 +334,7 @@
                     </userDefinedRuntimeAttributes>
                 </customObject>
             </objects>
-            <point key="canvasLocation" x="-984" y="-997"/>
+            <point key="canvasLocation" x="-1888" y="-1053"/>
         </scene>
         <!--我的-->
         <scene sceneID="z2Y-wK-pL3">
@@ -324,6 +378,8 @@
     <resources>
         <image name="Settings_00208" width="30" height="30"/>
         <image name="icon_pin_00160" width="30" height="30"/>
+        <image name="me_other_chat" width="20" height="20"/>
+        <image name="search_" width="16" height="15"/>
         <image name="tab_room_p" width="48" height="48"/>
     </resources>
 </document>
