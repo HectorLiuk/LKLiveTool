@@ -83,11 +83,11 @@ class HomeViewCOntroller: BasicViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+//        super.prepareForSegue(segue, sender: sender)
         //判断segue.identifier
         if segue.identifier == "pushDetail"{
+//            let page2 = segue.destinationViewController
             
-            let player = segue.destinationViewController as! PlayerLiveViewController
-            player.homeData = dataArray![tableView.indexPathForSelectedRow!.row] as? HomeModel
 
         }
     }

@@ -10,55 +10,15 @@ import UIKit
 
 class PlayerLiveViewController: BasicViewController {
 
-    var homeData : HomeModel?
-        /// 高斯滤镜模糊效果
-    lazy var blurView : UIImageView = {
-       let blurView = UIImageView(frame: screenBounds)
-        blurView.contentMode = .ScaleAspectFit
-        
-        blurView.kf_setImageWithURL(NSURL(string: MainImageUrl + (self.homeData!.creator.portrait)!),
-                                     placeholderImage: nil,
-                                     optionsInfo: nil)
-        //模糊效果
-        let blurEffect = UIBlurEffect(style: .Light)
-        let visualEffectView = UIVisualEffectView(effect: blurEffect)
-        visualEffectView.frame = blurView.bounds
-        blurView.addSubview(visualEffectView)
-        
-        return blurView
-    }()
-    
-    lazy var coseBtn : UIButton = {
-       let coseBtn = UIButton(type: .Custom)
-        coseBtn.setImage(UIImage(named: "mg_room_icon_stop"), forState: .Normal)
-        coseBtn.addTarget(self, action: #selector(PlayerLiveViewController.coseLivingView), forControlEvents: .TouchUpInside)
-        
-        return coseBtn
-    }()
-    
-    var player : IJKMediaPlayback!
-    
-    lazy var playerView : UIView = {
-        let playerView = UIView(frame: screenBounds)
-        playerView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
-        
-        return playerView
-    }()
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
-        UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
-
-        //准备播放
-        if player!.isPlaying() == false {
-            player!.prepareToPlay()
-        }
     }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+<<<<<<< HEAD
         
         addCoseBtnInWindow()
         
@@ -195,11 +155,29 @@ class PlayerLiveViewController: BasicViewController {
         player.shutdown()
         coseBtn.removeFromSuperview()
         navigationController?.setNavigationBarHidden(false, animated: false)
+=======
 
-        popViewController()
+
+    }
+>>>>>>> parent of 6159f8a... 视频播放
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
     }
     
+<<<<<<< HEAD
     
+=======
+>>>>>>> parent of 6159f8a... 视频播放
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }

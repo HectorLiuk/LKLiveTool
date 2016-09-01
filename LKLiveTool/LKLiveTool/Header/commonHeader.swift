@@ -9,12 +9,6 @@
 import Foundation
 import UIKit
 
-public let keyWindow = UIApplication.sharedApplication().keyWindow
-
-
-public let screenBounds = UIScreen.mainScreen().bounds
-
-
  /// 首页cell 标题颜色
 public let homeTitleColor = UIColor.hexColor("#8c989c")
 
