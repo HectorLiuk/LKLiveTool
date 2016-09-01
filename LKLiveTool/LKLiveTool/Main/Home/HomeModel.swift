@@ -14,7 +14,7 @@ class HomeModel: Reflect {
     var ID : String!
     
     var city : String!
-            
+    
     var online_users : NSNumber!
     
     var stream_addr : String!
