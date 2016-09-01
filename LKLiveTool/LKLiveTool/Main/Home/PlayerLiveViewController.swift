@@ -96,7 +96,7 @@ class PlayerLiveViewController: BasicViewController {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlayerLiveViewController.IJKMPMediaPlaybackIsPreparedToPlayDidChange(_:)), name: IJKMPMediaPlaybackIsPreparedToPlayDidChangeNotification, object: player)
         
         //通知播放器形状比例模型已经发生改变
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlayerLiveViewController.IJKMPMediaPlaybackIsPreparedToPlayDidChange(_:)), name: IJKMPMoviePlayerScalingModeDidChangeNotification, object: player)
+        //        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlayerLiveViewController.IJKMPMediaPlaybackIsPreparedToPlayDidChange(_:)), name: IJKMPMoviePlayerScalingModeDidChangeNotification, object: player)
         
         //通知视频播放结束时或用户退出播放
         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlayerLiveViewController.IJKFFMovieMoviePlayBackFinish(_:)), name: IJKMPMoviePlayerPlaybackDidFinishNotification, object: player)

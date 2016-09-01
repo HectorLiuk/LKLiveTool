@@ -59,12 +59,12 @@ class HomeViewCOntroller: BasicViewController {
     }
     
     func requestHomeList(){
-
+        
         Alamofire.request(.GET, HomeUrl, parameters: nil)
             .responseJSON { response in
-//                print(response.request!)  // original URL request
-//                print(response.response!) // URL response
-//                print(response.result.value)   // result of response
+                //                print(response.request!)  // original URL request
+                //                print(response.response!) // URL response
+                //                print(response.result.value)   // result of response
                 if let JSON = response.result.value {
                     print(JSON)
                     self.dataArray?.removeAll()
@@ -83,12 +83,12 @@ class HomeViewCOntroller: BasicViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-//        super.prepareForSegue(segue, sender: sender)
         //判断segue.identifier
         if segue.identifier == "pushDetail"{
-//            let page2 = segue.destinationViewController
             
-
+            let player = segue.destinationViewController as! PlayerLiveViewController
+            player.homeData = dataArray![tableView.indexPathForSelectedRow!.row] as? HomeModel
+            
         }
     }
     
@@ -118,9 +118,9 @@ extension HomeViewCOntroller : UITableViewDelegate ,UITableViewDataSource{
     }
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        let vc = UIViewController()
-//        vc.hidesBottomBarWhenPushed = true
-//        tabBarController?.tabBar.hidden = true
-//        navigationController?.pushViewController(vc, animated: true)
+        //        let vc = UIViewController()
+        //        vc.hidesBottomBarWhenPushed = true
+        //        tabBarController?.tabBar.hidden = true
+        //        navigationController?.pushViewController(vc, animated: true)
     }
 }
