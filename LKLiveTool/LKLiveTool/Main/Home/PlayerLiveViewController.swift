@@ -62,7 +62,7 @@ class PlayerLiveViewController: BasicViewController {
         
         addCoseBtnInWindow()
         
-//        view.addSubview(blurView)
+        view.addSubview(blurView)
         
         startPlayer()
         
