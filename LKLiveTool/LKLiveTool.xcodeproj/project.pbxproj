@@ -54,6 +54,8 @@
 		C4AD60B21D76D9D700091BCC /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */; };
 		C4AD60B41D76E63F00091BCC /* PlayerLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */; };
 		C4AD60BC1D7806BD00091BCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AD60BB1D7806BD00091BCC /* libz.tbd */; };
+		C4AD60BF1D78427500091BCC /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AD60BD1D7841AE00091BCC /* IJKMediaFramework.framework */; };
+		C4AD60C01D78427500091BCC /* IJKMediaFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C4AD60BD1D7841AE00091BCC /* IJKMediaFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -286,6 +288,7 @@
 				C44C0CED1D7442F70050A648 /* Alamofire.framework in Embed Frameworks */,
 				C44C0D381D7448DE0050A648 /* Kingfisher.framework in Embed Frameworks */,
 				C44C0D091D7443F80050A648 /* SnapKit.framework in Embed Frameworks */,
+				C4AD60C01D78427500091BCC /* IJKMediaFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +347,7 @@
 		C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLiveViewController.swift; sourceTree = "<group>"; };
 		C4AD60B71D78044000091BCC /* LKLiveTool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LKLiveTool-Bridging-Header.h"; path = "../Main/Home/LKLiveTool-Bridging-Header.h"; sourceTree = "<group>"; };
 		C4AD60BB1D7806BD00091BCC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C4AD60BD1D7841AE00091BCC /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -354,6 +358,7 @@
 				C4AD60BC1D7806BD00091BCC /* libz.tbd in Frameworks */,
 				C44C0CEC1D7442F70050A648 /* Alamofire.framework in Frameworks */,
 				C44C0D371D7448DE0050A648 /* Kingfisher.framework in Frameworks */,
+				C4AD60BF1D78427500091BCC /* IJKMediaFramework.framework in Frameworks */,
 				C44C0D081D7443F80050A648 /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,6 +675,7 @@
 			isa = PBXGroup;
 			children = (
 				C4AD60BB1D7806BD00091BCC /* libz.tbd */,
+				C4AD60BD1D7841AE00091BCC /* IJKMediaFramework.framework */,
 				C44C0D851D76BB8B0050A648 /* Reflect */,
 				C44C0D4D1D7533E30050A648 /* RAMAnimatedTabBarController */,
 				C44C0D411D744D300050A648 /* DGElasticPullToRefresh */,
