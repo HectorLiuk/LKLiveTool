@@ -53,7 +53,6 @@
 		C4AD60981D76D7B500091BCC /* commonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60971D76D7B500091BCC /* commonHeader.swift */; };
 		C4AD60B21D76D9D700091BCC /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */; };
 		C4AD60B41D76E63F00091BCC /* PlayerLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */; };
-		C4AD60B61D7803C600091BCC /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AD60B51D7803C600091BCC /* IJKMediaFramework.framework */; };
 		C4AD60BC1D7806BD00091BCC /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AD60BB1D7806BD00091BCC /* libz.tbd */; };
 /* End PBXBuildFile section */
 
@@ -343,7 +342,6 @@
 		C4AD60971D76D7B500091BCC /* commonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commonHeader.swift; sourceTree = "<group>"; };
 		C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLiveViewController.swift; sourceTree = "<group>"; };
-		C4AD60B51D7803C600091BCC /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
 		C4AD60B71D78044000091BCC /* LKLiveTool-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "LKLiveTool-Bridging-Header.h"; path = "../Main/Home/LKLiveTool-Bridging-Header.h"; sourceTree = "<group>"; };
 		C4AD60BB1D7806BD00091BCC /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -357,7 +355,6 @@
 				C44C0CEC1D7442F70050A648 /* Alamofire.framework in Frameworks */,
 				C44C0D371D7448DE0050A648 /* Kingfisher.framework in Frameworks */,
 				C44C0D081D7443F80050A648 /* SnapKit.framework in Frameworks */,
-				C4AD60B61D7803C600091BCC /* IJKMediaFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -673,7 +670,6 @@
 			isa = PBXGroup;
 			children = (
 				C4AD60BB1D7806BD00091BCC /* libz.tbd */,
-				C4AD60B51D7803C600091BCC /* IJKMediaFramework.framework */,
 				C44C0D851D76BB8B0050A648 /* Reflect */,
 				C44C0D4D1D7533E30050A648 /* RAMAnimatedTabBarController */,
 				C44C0D411D744D300050A648 /* DGElasticPullToRefresh */,

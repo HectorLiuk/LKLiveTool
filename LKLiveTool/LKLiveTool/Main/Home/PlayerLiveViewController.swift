@@ -148,10 +148,10 @@ class PlayerLiveViewController: BasicViewController {
     // MARK: 通知视频播放状态发生改变是，已程序或者告诉用户
     func IJKMPMoviePlayerPlaybackStateDidChange(notification : NSNotification) {
 //        switch player.playbackState {
-//        case .:
-//            <#code#>
+//        case :Interrupted
+//            
 //        default:
-//            <#code#>
+//            
 //        }
     }
     
