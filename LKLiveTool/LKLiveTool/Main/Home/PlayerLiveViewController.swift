@@ -66,12 +66,14 @@ class PlayerLiveViewController: BasicViewController {
         
         startPlayer()
         
+        addMovieNotificationObservers()
+        
         
 
     }
     
     
-    
+    // MARK: player设置
     /**
      加载播放视频
      */
@@ -86,6 +88,93 @@ class PlayerLiveViewController: BasicViewController {
         
     }
     
+    // MARK: ------------------
+    // MARK: 添加player通知
+    func addMovieNotificationObservers() {
+        
+        //通知准备好改变的对象状态 遵从MPMediaPlayback协议的改变
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlayerLiveViewController.IJKMPMediaPlaybackIsPreparedToPlayDidChange(_:)), name: IJKMPMediaPlaybackIsPreparedToPlayDidChangeNotification, object: player)
+        
+        //通知播放器形状比例模型已经发生改变
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlayerLiveViewController.IJKMPMediaPlaybackIsPreparedToPlayDidChange(_:)), name: IJKMPMoviePlayerScalingModeDidChangeNotification, object: player)
+        
+        //通知视频播放结束时或用户退出播放
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlayerLiveViewController.IJKFFMovieMoviePlayBackFinish(_:)), name: IJKMPMoviePlayerPlaybackDidFinishNotification, object: player)
+        
+        //通知视频播放状态发生改变是，已程序或者告诉用户
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlayerLiveViewController.IJKFFMovieLoadStateDidChange(_:)), name: IJKMPMoviePlayerPlaybackStateDidChangeNotification, object: player)
+
+        //通知在网络加载时状态更改
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(PlayerLiveViewController.IJKFFMovieLoadStateDidChange(_:)), name: IJKMPMoviePlayerLoadStateDidChangeNotification, object: player)
+        
+        
+    }
+    
+    deinit {
+        //移除通知监听
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+        
+    }
+    
+    // MARK: 通知准备好改变的对象状态 遵从MPMediaPlayback协议的改变
+    func IJKMPMediaPlaybackIsPreparedToPlayDidChange(notification : NSNotification) {
+        print("IJKMPMediaPlaybackIsPreparedToPlayDidChangeNotification")
+    }
+    
+    // MARK: 通知播放器形状比例模型已经发生改变
+    func IJKMPMoviePlayerScalingModeDidChange(notification : NSNotification) {
+        print("IJKMPMoviePlayerScalingModeDidChange")
+    }
+    
+    // MARK: 通知视频播放结束时或用户退出播放
+    func IJKFFMovieMoviePlayBackFinish(notification : NSNotification) {
+        
+        let finishState = notification.userInfo![IJKMPMoviePlayerPlaybackDidFinishReasonUserInfoKey] as! IJKMPMovieFinishReason
+        
+        switch finishState {
+        case .PlaybackEnded:
+            print("视频退出播放:  IJKMPMovieFinishReason(视频结束)" )
+            break
+        case .UserExited:
+            print("视频退出播放:  IJKMPMovieFinishReason(用户退出视频)" )
+            break
+
+        case .PlaybackError:
+            print("视频退出播放:  IJKMPMovieFinishReason(视频播放出现错误退出)" )
+            break
+        }
+    }
+    
+    // MARK: 通知视频播放状态发生改变是，已程序或者告诉用户
+    func IJKMPMoviePlayerPlaybackStateDidChange(notification : NSNotification) {
+//        switch player.playbackState {
+//        case .:
+//            <#code#>
+//        default:
+//            <#code#>
+//        }
+    }
+    
+    
+    // MARK: 通知在网络加载时状态更改
+    func IJKFFMovieLoadStateDidChange(notification : NSNotification) {
+        let loadState = player.loadState
+        print("++++网络加载时状态更改:\(player.loadState)")
+        if loadState  != IJKMPMovieLoadState.Unknown || loadState == IJKMPMovieLoadState.PlaythroughOK   {
+            print("网络加载时状态更改:  IJKMovieLoadStatePlayThroughOK(播放将要自动开始状态)  \(player.loadState)" )
+            
+        }else if loadState  != IJKMPMovieLoadState.Unknown || loadState == IJKMPMovieLoadState.Stalled {
+            print("网络加载时状态更改:  IJKMPMovieLoadStateStalled(播放将要自动暂停)  \(player.loadState)" )
+            
+        }else{
+            print("网络加载时状态更改:  ??????????(状态未知)  \(player.loadState)" )
+            
+        }
+    }
+    
+    
+    
+    // MARK: 退出设置
     /**
      关闭按钮防止Window层
      */
@@ -102,6 +191,7 @@ class PlayerLiveViewController: BasicViewController {
      关闭当前视图
      */
     func coseLivingView() {
+        player.stop()
         player.shutdown()
         coseBtn.removeFromSuperview()
         navigationController?.setNavigationBarHidden(false, animated: false)
@@ -109,9 +199,7 @@ class PlayerLiveViewController: BasicViewController {
         popViewController()
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        
-    }
+    
 
 
 }
