@@ -26,3 +26,6 @@ public let NavBGColor = UIColor.hexColor("#8fe3d4")
 
 /// tabBar 和 导航栏title颜色
 public let TabBarAndTitleColor = UIColor.hexColor("#FFB304")
+
+
+

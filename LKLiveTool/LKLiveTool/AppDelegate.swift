@@ -8,6 +8,8 @@
 
 import UIKit
 
+var log = Loggerithm()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,10 +18,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        
+        setUpLogColor()
 
         return true
     }
+    
+    func setUpLogColor() {
+        log.verboseColor = UIColor.brownColor()
+        log.debugColor = UIColor.greenColor()
+        log.infoColor = UIColor.cyanColor()
+        log.warningColor = UIColor.yellowColor()
+        log.errorColor = UIColor.redColor()
+    }
+    
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

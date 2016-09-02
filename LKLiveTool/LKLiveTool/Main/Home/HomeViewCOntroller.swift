@@ -33,6 +33,8 @@ class HomeViewCOntroller: BasicViewController {
         tableView.reloadData()
     }
     
+    var cleanLogger = Loggerithm()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -40,7 +42,14 @@ class HomeViewCOntroller: BasicViewController {
         
         addRefreshView()
         
+
         
+        
+        log.verbose("Verbose message...")
+        log.debug("Debug message...")
+        log.info("Info message...")
+        log.warning("Warning message...")
+        log.error("Error message...")
         
     }
     

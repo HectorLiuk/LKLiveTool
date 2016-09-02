@@ -40,6 +40,7 @@ class PlayerLiveViewController: BasicViewController {
     
     lazy var playerView : UIView = {
         let playerView = UIView(frame: screenBounds)
+        //swift 枚举多选
         playerView.autoresizingMask = [.FlexibleHeight, .FlexibleWidth]
         
         return playerView
