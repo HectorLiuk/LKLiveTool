@@ -121,10 +121,10 @@ class PlayerLiveViewController: BasicViewController {
         print("IJKMPMediaPlaybackIsPreparedToPlayDidChangeNotification")
     }
     
-    // MARK: 通知播放器形状比例模型已经发生改变
-    func IJKMPMoviePlayerScalingModeDidChange(notification : NSNotification) {
-        print("IJKMPMoviePlayerScalingModeDidChange")
-    }
+//    // MARK: 通知播放器形状比例模型已经发生改变
+//    func IJKMPMoviePlayerScalingModeDidChange(notification : NSNotification) {
+//        print("IJKMPMoviePlayerScalingModeDidChange")
+//    }
     
     // MARK: 通知视频播放结束时或用户退出播放
     func IJKFFMovieMoviePlayBackFinish(notification : NSNotification) {
@@ -145,31 +145,68 @@ class PlayerLiveViewController: BasicViewController {
         }
     }
     
-    // MARK: 通知视频播放状态发生改变是，已程序或者告诉用户
+    // MARK: 通知视频播放状态发生改变时，已程序或者告诉用户
     func IJKMPMoviePlayerPlaybackStateDidChange(notification : NSNotification) {
-        //        switch player.playbackState {
-        //        case :Interrupted
-        //
-        //        default:
-        //
-        //        }
+        switch player.playbackState {
+        case .Playing:
+            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(Playing)")
+            
+            break
+        case .Stopped:
+            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(Stopped)")
+            
+            break
+        case .Paused:
+            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(Paused)")
+
+            break
+        case .Interrupted:
+            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(Interrupted 被阻止被中断)")
+
+            break
+        case .SeekingBackward:
+            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(SeekingBackward 视频后退)")
+            
+            break
+        case .SeekingForward:
+            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(SeekingForward 视频前进)")
+
+            break
+
+        }
     }
     
     
     // MARK: 通知在网络加载时状态更改
     func IJKFFMovieLoadStateDidChange(notification : NSNotification) {
         let loadState = player.loadState
-        print("++++网络加载时状态更改:\(player.loadState)")
-        if loadState  != IJKMPMovieLoadState.Unknown || loadState == IJKMPMovieLoadState.PlaythroughOK   {
+        print("++++网络加载时状态更改:\(player.loadState.rawValue)")
+//        if loadState  != IJKMPMovieLoadState.Unknown && loadState == IJKMPMovieLoadState.PlaythroughOK   {
+//            print("网络加载时状态更改:  IJKMovieLoadStatePlayThroughOK(播放将要自动开始状态)  \(player.loadState)" )
+//            
+//        }else if loadState  != IJKMPMovieLoadState.Unknown && loadState == IJKMPMovieLoadState.Stalled {
+//            print("网络加载时状态更改:  IJKMPMovieLoadStateStalled(网速不佳播放将要自动暂停)  \(player.loadState)" )
+//            
+//        }else{
+//            print("网络加载时状态更改:  ??????????(状态未知)  \(player.loadState)" )
+//            
+//        }
+        
+        if loadState.rawValue == 1 {
+            print("网络加载时状态更改:  IJKMPMovieLoadStatePlayable(播放未知？？？？？？)  \(player.loadState)" )
+
+        }else if loadState.rawValue == 2 {
+            print("网络加载时状态更改:  IJKMPMovieLoadStatePlayable(播放可持续的)  \(player.loadState)" )
+            
+        }else if loadState.rawValue == 3 {
             print("网络加载时状态更改:  IJKMovieLoadStatePlayThroughOK(播放将要自动开始状态)  \(player.loadState)" )
-            
-        }else if loadState  != IJKMPMovieLoadState.Unknown || loadState == IJKMPMovieLoadState.Stalled {
-            print("网络加载时状态更改:  IJKMPMovieLoadStateStalled(播放将要自动暂停)  \(player.loadState)" )
-            
-        }else{
-            print("网络加载时状态更改:  ??????????(状态未知)  \(player.loadState)" )
+
+        }else if loadState.rawValue == 4 {
+            print("网络加载时状态更改:  IJKMPMovieLoadStateStalled(网速不佳播放将要自动暂停)  \(player.loadState)" )
             
         }
+        
+        
     }
     
     
