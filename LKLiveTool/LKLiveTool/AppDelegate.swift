@@ -10,6 +10,7 @@ import UIKit
 
 var log = Loggerithm()
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

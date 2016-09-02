@@ -33,7 +33,6 @@ class HomeViewCOntroller: BasicViewController {
         tableView.reloadData()
     }
     
-    var cleanLogger = Loggerithm()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,7 +74,6 @@ class HomeViewCOntroller: BasicViewController {
                 //                print(response.response!) // URL response
                 //                print(response.result.value)   // result of response
                 if let JSON = response.result.value {
-                    print(JSON)
                     self.dataArray?.removeAll()
                     
                     let dic = JSON as! NSDictionary
@@ -86,6 +84,8 @@ class HomeViewCOntroller: BasicViewController {
                     self.tableView.dg_stopLoading()
                     
                     self.tableView.reloadData()
+                } else if (response.result.error != nil){
+                    
                 }
         }
         
