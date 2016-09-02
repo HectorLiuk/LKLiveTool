@@ -30,7 +30,7 @@ class PlayerLiveViewController: BasicViewController {
     
     lazy var coseBtn : UIButton = {
         let coseBtn = UIButton(type: .Custom)
-        coseBtn.setImage(UIImage(named: "mg_room_icon_stop"), forState: .Normal)
+        coseBtn.setImage(UIImage(named: "talk_close_40x40"), forState: .Normal)
         coseBtn.addTarget(self, action: #selector(PlayerLiveViewController.coseLivingView), forControlEvents: .TouchUpInside)
         
         return coseBtn
@@ -70,6 +70,10 @@ class PlayerLiveViewController: BasicViewController {
         addMovieNotificationObservers()
         
         
+        let inforView = PlayerShowInfoView()
+        view.addSubview(inforView)
+        
+        
         
     }
     
@@ -83,8 +87,8 @@ class PlayerLiveViewController: BasicViewController {
         //对视频播放编码选择
         let options = IJKFFOptions.optionsByDefault()
         
-        //开启硬编码
-        options.setPlayerOptionIntValue(1, forKey: "videotoolbox")
+        //开启硬编码 会出现画声音不同
+//        options.setPlayerOptionIntValue(1, forKey: "videotoolbox")
         
         // 帧速率(fps) （可以改，确认非标准桢率会导致音画不同步，所以只能设定为15或者29.97  一般默认就好不需要设置）
 //        options.setPlayerOptionIntValue(15 , forKey: "r")
@@ -216,6 +220,7 @@ class PlayerLiveViewController: BasicViewController {
             log.info("网络加载时状态更改:  IJKMovieLoadStatePlayThroughOK(播放将要自动开始状态)  \(player.loadState)" )
             if !player.isPlaying() {
                 player.play()
+                
             }
             
             
@@ -248,8 +253,8 @@ class PlayerLiveViewController: BasicViewController {
     func addCoseBtnInWindow() {
         keyWindow?.addSubview(coseBtn)
         coseBtn.snp_makeConstraints { (make) in
-            make.width.height.equalTo(50)
-            make.bottom.equalTo(-10)
+            make.width.height.equalTo(44)
+            make.bottom.equalTo(-16)
             make.right.equalTo(-10)
         }
     }

@@ -12,6 +12,8 @@
 		C416C1CC1D794EB100C0765F /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1C91D794EB100C0765F /* Type.swift */; };
 		C416C1E81D79664100C0765F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C1E71D79664100C0765F /* MBProgressHUD.m */; };
 		C416C1EA1D79672E00C0765F /* MBProgressHUD+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */; };
+		C416C1EC1D7968F500C0765F /* PlayerShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1EB1D7968F500C0765F /* PlayerShowInfoView.swift */; };
+		C416C1EE1D7975CF00C0765F /* InfoPlayerShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C416C1ED1D7975CF00C0765F /* InfoPlayerShowView.xib */; };
 		C44C0CEC1D7442F70050A648 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CDF1D7442C80050A648 /* Alamofire.framework */; };
 		C44C0CED1D7442F70050A648 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CDF1D7442C80050A648 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C44C0D081D7443F80050A648 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CFB1D7443E00050A648 /* SnapKit.framework */; };
@@ -305,6 +307,8 @@
 		C416C1E61D79664100C0765F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		C416C1E71D79664100C0765F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Custom.swift"; sourceTree = "<group>"; };
+		C416C1EB1D7968F500C0765F /* PlayerShowInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerShowInfoView.swift; sourceTree = "<group>"; };
+		C416C1ED1D7975CF00C0765F /* InfoPlayerShowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPlayerShowView.xib; sourceTree = "<group>"; };
 		C44C0CD31D7442C80050A648 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		C44C0CF01D7443E00050A648 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		C44C0D0E1D7446A40050A648 /* ImportHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportHeader.swift; sourceTree = "<group>"; };
@@ -563,6 +567,8 @@
 				C44C0D9A1D76BBAF0050A648 /* HomeModel.swift */,
 				C44C0D7A1D758BF80050A648 /* HomeTableViewCell.swift */,
 				C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */,
+				C416C1EB1D7968F500C0765F /* PlayerShowInfoView.swift */,
+				C416C1ED1D7975CF00C0765F /* InfoPlayerShowView.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1055,6 +1061,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C416C1EE1D7975CF00C0765F /* InfoPlayerShowView.xib in Resources */,
 				C48907C51D7430DC00B9B0DB /* LaunchScreen.storyboard in Resources */,
 				C4E4B1F51D787FB80054C139 /* Assets.xcassets in Resources */,
 				C48907C01D7430DC00B9B0DB /* Main.storyboard in Resources */,
@@ -1122,6 +1129,7 @@
 				C44C0D941D76BB8C0050A648 /* Reflect+Convert.swift in Sources */,
 				C44C0D921D76BB8C0050A648 /* Reflect+ArcFile.swift in Sources */,
 				C44C0D841D76B5960050A648 /* NetWork.swift in Sources */,
+				C416C1EC1D7968F500C0765F /* PlayerShowInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
