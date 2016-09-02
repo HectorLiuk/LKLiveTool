@@ -3,3 +3,4 @@
 //
 
 #import <IJKMediaFramework/IJKMediaFramework.h>
+#import "MBProgressHUD.h"

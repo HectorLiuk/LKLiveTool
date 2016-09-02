@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 var log = Loggerithm()
 
@@ -15,11 +16,17 @@ var log = Loggerithm()
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    var networkString : String!
+    
+    var isWifi = false
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
         setUpLogColor()
+        
+        getNetWorkState()
 
         return true
     }
@@ -30,6 +37,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         log.infoColor = UIColor.cyanColor()
         log.warningColor = UIColor.yellowColor()
         log.errorColor = UIColor.redColor()
+    }
+    
+    /**
+     网络状态
+     */
+    func getNetWorkState() -> (stateString: String , isWifi: Bool){
+        
+        
+        let networkState = Alamofire.NetworkReachabilityManager(host: "http://www.baidu.com")
+        
+        networkState?.startListening()
+        
+        switch networkState!.networkReachabilityStatus {
+        case .Unknown:
+            networkString = "网络未知"
+            isWifi = false
+            break
+            
+        case .NotReachable:
+            networkString = "没有网络"
+            isWifi = false
+            break
+            
+        case .Reachable(.EthernetOrWiFi):
+            networkString = "wifi 以太网"
+            isWifi = true
+            break
+            
+        case .Reachable(.WWAN):
+            networkString = "移动网络 蜂窝网络"
+            isWifi = false
+            
+            break
+        }
+        return (networkString ,isWifi)
     }
     
 

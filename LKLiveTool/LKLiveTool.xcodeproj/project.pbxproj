@@ -10,6 +10,8 @@
 		C416C1CA1D794EB100C0765F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1C71D794EB100C0765F /* Color.swift */; };
 		C416C1CB1D794EB100C0765F /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1C81D794EB100C0765F /* Loggerithm.swift */; };
 		C416C1CC1D794EB100C0765F /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1C91D794EB100C0765F /* Type.swift */; };
+		C416C1E81D79664100C0765F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C1E71D79664100C0765F /* MBProgressHUD.m */; };
+		C416C1EA1D79672E00C0765F /* MBProgressHUD+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */; };
 		C44C0CEC1D7442F70050A648 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CDF1D7442C80050A648 /* Alamofire.framework */; };
 		C44C0CED1D7442F70050A648 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CDF1D7442C80050A648 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C44C0D081D7443F80050A648 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CFB1D7443E00050A648 /* SnapKit.framework */; };
@@ -300,6 +302,9 @@
 		C416C1C71D794EB100C0765F /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C416C1C81D794EB100C0765F /* Loggerithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggerithm.swift; sourceTree = "<group>"; };
 		C416C1C91D794EB100C0765F /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
+		C416C1E61D79664100C0765F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		C416C1E71D79664100C0765F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Custom.swift"; sourceTree = "<group>"; };
 		C44C0CD31D7442C80050A648 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		C44C0CF01D7443E00050A648 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		C44C0D0E1D7446A40050A648 /* ImportHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportHeader.swift; sourceTree = "<group>"; };
@@ -392,6 +397,15 @@
 				C416C1C91D794EB100C0765F /* Type.swift */,
 			);
 			path = Loggerithm;
+			sourceTree = "<group>";
+		};
+		C416C1E51D79664100C0765F /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C416C1E61D79664100C0765F /* MBProgressHUD.h */,
+				C416C1E71D79664100C0765F /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		C44C0CD41D7442C80050A648 /* Products */ = {
@@ -688,6 +702,7 @@
 		C48907E81D74319700B9B0DB /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				C416C1E51D79664100C0765F /* MBProgressHUD */,
 				C416C1C61D794EB100C0765F /* Loggerithm */,
 				C4E4B1F11D787F4C0054C139 /* IJKMediaFramework.framework */,
 				C4AD60BB1D7806BD00091BCC /* libz.tbd */,
@@ -715,6 +730,7 @@
 			isa = PBXGroup;
 			children = (
 				C44C0D811D76A94F0050A648 /* UIColor+HEX.swift */,
+				C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1088,6 +1104,7 @@
 				C44C0D631D7533E30050A648 /* RAMBadge.swift in Sources */,
 				C44C0D6D1D7555370050A648 /* HomeViewCOntroller.swift in Sources */,
 				C416C1CB1D794EB100C0765F /* Loggerithm.swift in Sources */,
+				C416C1E81D79664100C0765F /* MBProgressHUD.m in Sources */,
 				C44C0D491D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 				C44C0D4A1D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
 				C44C0D821D76A94F0050A648 /* UIColor+HEX.swift in Sources */,
@@ -1097,6 +1114,7 @@
 				C44C0D5D1D7533E30050A648 /* RAMBounceAnimation.swift in Sources */,
 				C4AD60B41D76E63F00091BCC /* PlayerLiveViewController.swift in Sources */,
 				C44C0D611D7533E30050A648 /* RAMTransitionItemAnimations.swift in Sources */,
+				C416C1EA1D79672E00C0765F /* MBProgressHUD+Custom.swift in Sources */,
 				C416C1CC1D794EB100C0765F /* Type.swift in Sources */,
 				C44C0D641D7533E30050A648 /* RAMItemAnimationProtocol.swift in Sources */,
 				C44C0D971D76BB8C0050A648 /* Reflect+Property.swift in Sources */,

@@ -80,8 +80,30 @@ class PlayerLiveViewController: BasicViewController {
      */
     func startPlayer() {
         
+        //对视频播放编码选择
+        let options = IJKFFOptions.optionsByDefault()
+        
+        //开启硬编码
+        options.setPlayerOptionIntValue(1, forKey: "videotoolbox")
+        
+        // 帧速率(fps) （可以改，确认非标准桢率会导致音画不同步，所以只能设定为15或者29.97  一般默认就好不需要设置）
+//        options.setPlayerOptionIntValue(15 , forKey: "r")
+        
+        // -vol——设置音量大小，256为标准音量。（要设置成两倍音量时则输入512，依此类推)
+        options.setPlayerOptionIntValue(256, forKey: "vol")
+        
+        //播放器设置
         player = IJKFFMoviePlayerController(contentURLString: homeData?.stream_addr, withOptions: nil)
+        
         player?.scalingMode = .AspectFill
+        
+        // 设置自动播放(必须设置为NO, 防止自动播放, 才能更好的控制直播的状态)
+        player.shouldAutoplay = false
+        
+        // 准备播放
+        player.prepareToPlay()
+
+        
         
         playerView = (player?.view)!
         
@@ -119,12 +141,13 @@ class PlayerLiveViewController: BasicViewController {
     
     // MARK: 通知准备好改变的对象状态 遵从MPMediaPlayback协议的改变
     func IJKMPMediaPlaybackIsPreparedToPlayDidChange(notification : NSNotification) {
-        print("IJKMPMediaPlaybackIsPreparedToPlayDidChangeNotification")
+        
+        log.info("IJKMPMediaPlaybackIsPreparedToPlayDidChangeNotification 通知准备好改变的对象状态 遵从MPMediaPlayback协议的改变 \(notification.userInfo)")
     }
     
 //    // MARK: 通知播放器形状比例模型已经发生改变
 //    func IJKMPMoviePlayerScalingModeDidChange(notification : NSNotification) {
-//        print("IJKMPMoviePlayerScalingModeDidChange")
+//        log.info("IJKMPMoviePlayerScalingModeDidChange")
 //    }
     
     // MARK: 通知视频播放结束时或用户退出播放
@@ -134,14 +157,15 @@ class PlayerLiveViewController: BasicViewController {
         
         switch finishState {
         case .PlaybackEnded:
-            print("视频退出播放:  IJKMPMovieFinishReason(视频结束)" )
+            
+            log.info("视频退出播放:  IJKMPMovieFinishReason(视频结束)" )
             break
         case .UserExited:
-            print("视频退出播放:  IJKMPMovieFinishReason(用户退出视频)" )
+            log.info("视频退出播放:  IJKMPMovieFinishReason(用户退出视频)" )
             break
             
         case .PlaybackError:
-            print("视频退出播放:  IJKMPMovieFinishReason(视频播放出现错误退出)" )
+            log.info("视频退出播放:  IJKMPMovieFinishReason(视频播放出现错误退出)" )
             break
         }
     }
@@ -150,27 +174,27 @@ class PlayerLiveViewController: BasicViewController {
     func IJKMPMoviePlayerPlaybackStateDidChange(notification : NSNotification) {
         switch player.playbackState {
         case .Playing:
-            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(Playing)")
+            log.info("通知视频播放状态发生改变时:  ---(Playing)")
             
             break
         case .Stopped:
-            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(Stopped)")
+            log.info("通知视频播放状态发生改变时:  ---(Stopped)")
             
             break
         case .Paused:
-            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(Paused)")
+            log.info("通知视频播放状态发生改变时:  ---(Paused)")
 
             break
         case .Interrupted:
-            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(Interrupted 被阻止被中断)")
+            log.info("通知视频播放状态发生改变时:  ---(Interrupted 被阻止被中断)")
 
             break
         case .SeekingBackward:
-            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(SeekingBackward 视频后退)")
+            log.info("通知视频播放状态发生改变时:  ---(SeekingBackward 视频后退)")
             
             break
         case .SeekingForward:
-            print("通知视频播放状态发生改变时 :IJKMPMoviePlayBackStateDidChange:  ---(SeekingForward 视频前进)")
+            log.info("通知视频播放状态发生改变时:  ---(SeekingForward 视频前进)")
 
             break
 
@@ -181,31 +205,36 @@ class PlayerLiveViewController: BasicViewController {
     // MARK: 通知在网络加载时状态更改
     func IJKFFMovieLoadStateDidChange(notification : NSNotification) {
         let loadState = player.loadState
-        print("++++网络加载时状态更改:\(player.loadState.rawValue)")
-//        if loadState  != IJKMPMovieLoadState.Unknown && loadState == IJKMPMovieLoadState.PlaythroughOK   {
-//            print("网络加载时状态更改:  IJKMovieLoadStatePlayThroughOK(播放将要自动开始状态)  \(player.loadState)" )
-//            
-//        }else if loadState  != IJKMPMovieLoadState.Unknown && loadState == IJKMPMovieLoadState.Stalled {
-//            print("网络加载时状态更改:  IJKMPMovieLoadStateStalled(网速不佳播放将要自动暂停)  \(player.loadState)" )
-//            
-//        }else{
-//            print("网络加载时状态更改:  ??????????(状态未知)  \(player.loadState)" )
-//            
-//        }
         
         if loadState.rawValue == 1 {
-            print("网络加载时状态更改:  IJKMPMovieLoadStatePlayable(播放未知？？？？？？)  \(player.loadState)" )
+            log.info("网络加载时状态更改:  IJKMPMovieLoadStatePlayable(播放未知？？？？？？)  \(player.loadState)" )
 
         }else if loadState.rawValue == 2 {
-            print("网络加载时状态更改:  IJKMPMovieLoadStatePlayable(播放可持续的)  \(player.loadState)" )
+            log.info("网络加载时状态更改:  IJKMPMovieLoadStatePlayable(播放可持续的)  \(player.loadState)" )
             
         }else if loadState.rawValue == 3 {
-            print("网络加载时状态更改:  IJKMovieLoadStatePlayThroughOK(播放将要自动开始状态)  \(player.loadState)" )
+            log.info("网络加载时状态更改:  IJKMovieLoadStatePlayThroughOK(播放将要自动开始状态)  \(player.loadState)" )
+            if !player.isPlaying() {
+                player.play()
+            }
+            
+            
 
         }else if loadState.rawValue == 4 {
-            print("网络加载时状态更改:  IJKMPMovieLoadStateStalled(网速不佳播放将要自动暂停)  \(player.loadState)" )
+            log.info("网络加载时状态更改:  IJKMPMovieLoadStateStalled(网速不佳播放将要自动暂停)  \(player.loadState)" )
             
         }
+        
+        //        if loadState  != IJKMPMovieLoadState.Unknown && loadState == IJKMPMovieLoadState.PlaythroughOK   {
+        //            log.info("网络加载时状态更改:  IJKMovieLoadStatePlayThroughOK(播放将要自动开始状态)  \(player.loadState)" )
+        //
+        //        }else if loadState  != IJKMPMovieLoadState.Unknown && loadState == IJKMPMovieLoadState.Stalled {
+        //            log.info("网络加载时状态更改:  IJKMPMovieLoadStateStalled(网速不佳播放将要自动暂停)  \(player.loadState)" )
+        //
+        //        }else{
+        //            log.info("网络加载时状态更改:  ??????????(状态未知)  \(player.loadState)" )
+        //            
+        //        }
         
         
     }

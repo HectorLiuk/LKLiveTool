@@ -40,9 +40,7 @@ class HomeViewCOntroller: BasicViewController {
         requestHomeList()
         
         addRefreshView()
-        
-
-        
+                
         
         log.verbose("Verbose message...")
         log.debug("Debug message...")
