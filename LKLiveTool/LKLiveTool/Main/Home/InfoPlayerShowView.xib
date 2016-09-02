@@ -7,7 +7,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InfoPlayerShowView" customModule="LKLiveTool" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -78,6 +78,9 @@
                         <constraint firstAttribute="width" constant="44" id="j69-DJ-UWc"/>
                     </constraints>
                     <state key="normal" image="talk_private_40x40"/>
+                    <connections>
+                        <action selector="chatClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="gAB-JM-iuR"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9U-tj-0Sa">
                     <rect key="frame" x="83" y="607" width="44" height="44"/>
@@ -86,6 +89,9 @@
                         <constraint firstAttribute="width" constant="44" id="jO6-tq-3fH"/>
                     </constraints>
                     <state key="normal" image="talk_rank_40x40"/>
+                    <connections>
+                        <action selector="beastClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="aLa-sw-NvF"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEG-ZG-eS8">
                     <rect key="frame" x="147" y="607" width="44" height="44"/>
@@ -102,6 +108,9 @@
                         <constraint firstAttribute="width" constant="44" id="k7y-gX-nMF"/>
                     </constraints>
                     <state key="normal" image="talk_share_40x40"/>
+                    <connections>
+                        <action selector="shareClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="jca-fn-x2L"/>
+                    </connections>
                 </button>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mfA-rl-MA5">
                     <rect key="frame" x="10" y="77" width="161" height="31"/>
@@ -129,7 +138,10 @@
                 <constraint firstItem="MEG-ZG-eS8" firstAttribute="leading" secondItem="O9U-tj-0Sa" secondAttribute="trailing" constant="20" id="tTu-eN-ouq"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="206.5" y="267.5"/>
+            <connections>
+                <outlet property="giftClick" destination="MEG-ZG-eS8" id="Q95-Sa-ZSZ"/>
+            </connections>
+            <point key="canvasLocation" x="186.5" y="282.5"/>
         </view>
     </objects>
     <resources>

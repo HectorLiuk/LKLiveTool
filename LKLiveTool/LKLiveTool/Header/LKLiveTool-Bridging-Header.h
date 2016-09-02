@@ -4,3 +4,7 @@
 
 #import <IJKMediaFramework/IJKMediaFramework.h>
 #import "MBProgressHUD.h"
+#import "XTLoveHeartView.h"
+//#import "ViewController1.h"
+//#import "EmitterSnowController.h"
+//#import "XTPictureViewController.h"

@@ -14,6 +14,19 @@
 		C416C1EA1D79672E00C0765F /* MBProgressHUD+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */; };
 		C416C1EC1D7968F500C0765F /* PlayerShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1EB1D7968F500C0765F /* PlayerShowInfoView.swift */; };
 		C416C1EE1D7975CF00C0765F /* InfoPlayerShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C416C1ED1D7975CF00C0765F /* InfoPlayerShowView.xib */; };
+		C416C2061D79875500C0765F /* darong.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C1F11D79875500C0765F /* darong.png */; };
+		C416C2071D79875500C0765F /* XTLoveHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C1F31D79875500C0765F /* XTLoveHeartView.m */; };
+		C416C2081D79875500C0765F /* XTLoveHeartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C1F51D79875500C0765F /* XTLoveHeartViewController.m */; };
+		C416C2091D79875500C0765F /* FFRing.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C1F71D79875500C0765F /* FFRing.png */; };
+		C416C20A1D79875500C0765F /* FFTspark.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C1F81D79875500C0765F /* FFTspark.png */; };
+		C416C20B1D79875500C0765F /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C1FA1D79875500C0765F /* ViewController1.m */; };
+		C416C20C1D79875500C0765F /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C416C1FC1D79875500C0765F /* resource.bundle */; };
+		C416C20D1D79875500C0765F /* XTLikePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C1FE1D79875500C0765F /* XTLikePictureView.m */; };
+		C416C20E1D79875500C0765F /* XTPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C2001D79875500C0765F /* XTPictureViewController.m */; };
+		C416C20F1D79875500C0765F /* alpha@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C2021D79875500C0765F /* alpha@2x.png */; };
+		C416C2101D79875500C0765F /* EmitterSnowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C2041D79875500C0765F /* EmitterSnowController.m */; };
+		C416C2111D79875500C0765F /* snow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C2051D79875500C0765F /* snow@2x.png */; };
+		C416C2131D7987BA00C0765F /* InfoPlayerShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C2121D7987BA00C0765F /* InfoPlayerShowView.swift */; };
 		C44C0CEC1D7442F70050A648 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CDF1D7442C80050A648 /* Alamofire.framework */; };
 		C44C0CED1D7442F70050A648 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CDF1D7442C80050A648 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C44C0D081D7443F80050A648 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CFB1D7443E00050A648 /* SnapKit.framework */; };
@@ -309,6 +322,25 @@
 		C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Custom.swift"; sourceTree = "<group>"; };
 		C416C1EB1D7968F500C0765F /* PlayerShowInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerShowInfoView.swift; sourceTree = "<group>"; };
 		C416C1ED1D7975CF00C0765F /* InfoPlayerShowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPlayerShowView.xib; sourceTree = "<group>"; };
+		C416C1F11D79875500C0765F /* darong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darong.png; sourceTree = "<group>"; };
+		C416C1F21D79875500C0765F /* XTLoveHeartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTLoveHeartView.h; sourceTree = "<group>"; };
+		C416C1F31D79875500C0765F /* XTLoveHeartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTLoveHeartView.m; sourceTree = "<group>"; };
+		C416C1F41D79875500C0765F /* XTLoveHeartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTLoveHeartViewController.h; sourceTree = "<group>"; };
+		C416C1F51D79875500C0765F /* XTLoveHeartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTLoveHeartViewController.m; sourceTree = "<group>"; };
+		C416C1F71D79875500C0765F /* FFRing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FFRing.png; sourceTree = "<group>"; };
+		C416C1F81D79875500C0765F /* FFTspark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FFTspark.png; sourceTree = "<group>"; };
+		C416C1F91D79875500C0765F /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
+		C416C1FA1D79875500C0765F /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
+		C416C1FC1D79875500C0765F /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
+		C416C1FD1D79875500C0765F /* XTLikePictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTLikePictureView.h; sourceTree = "<group>"; };
+		C416C1FE1D79875500C0765F /* XTLikePictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTLikePictureView.m; sourceTree = "<group>"; };
+		C416C1FF1D79875500C0765F /* XTPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPictureViewController.h; sourceTree = "<group>"; };
+		C416C2001D79875500C0765F /* XTPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPictureViewController.m; sourceTree = "<group>"; };
+		C416C2021D79875500C0765F /* alpha@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alpha@2x.png"; sourceTree = "<group>"; };
+		C416C2031D79875500C0765F /* EmitterSnowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmitterSnowController.h; sourceTree = "<group>"; };
+		C416C2041D79875500C0765F /* EmitterSnowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmitterSnowController.m; sourceTree = "<group>"; };
+		C416C2051D79875500C0765F /* snow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snow@2x.png"; sourceTree = "<group>"; };
+		C416C2121D7987BA00C0765F /* InfoPlayerShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPlayerShowView.swift; sourceTree = "<group>"; };
 		C44C0CD31D7442C80050A648 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		C44C0CF01D7443E00050A648 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		C44C0D0E1D7446A40050A648 /* ImportHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportHeader.swift; sourceTree = "<group>"; };
@@ -410,6 +442,63 @@
 				C416C1E71D79664100C0765F /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		C416C1EF1D79875500C0765F /* 礼物效果 */ = {
+			isa = PBXGroup;
+			children = (
+				C416C1F01D79875500C0765F /* YY直播点赞 */,
+				C416C1F61D79875500C0765F /* 烟花 */,
+				C416C1FB1D79875500C0765F /* 直播图片动画 */,
+				C416C2011D79875500C0765F /* 雪花效果 */,
+			);
+			path = "礼物效果";
+			sourceTree = "<group>";
+		};
+		C416C1F01D79875500C0765F /* YY直播点赞 */ = {
+			isa = PBXGroup;
+			children = (
+				C416C1F11D79875500C0765F /* darong.png */,
+				C416C1F21D79875500C0765F /* XTLoveHeartView.h */,
+				C416C1F31D79875500C0765F /* XTLoveHeartView.m */,
+				C416C1F41D79875500C0765F /* XTLoveHeartViewController.h */,
+				C416C1F51D79875500C0765F /* XTLoveHeartViewController.m */,
+			);
+			path = "YY直播点赞";
+			sourceTree = "<group>";
+		};
+		C416C1F61D79875500C0765F /* 烟花 */ = {
+			isa = PBXGroup;
+			children = (
+				C416C1F71D79875500C0765F /* FFRing.png */,
+				C416C1F81D79875500C0765F /* FFTspark.png */,
+				C416C1F91D79875500C0765F /* ViewController1.h */,
+				C416C1FA1D79875500C0765F /* ViewController1.m */,
+			);
+			path = "烟花";
+			sourceTree = "<group>";
+		};
+		C416C1FB1D79875500C0765F /* 直播图片动画 */ = {
+			isa = PBXGroup;
+			children = (
+				C416C1FC1D79875500C0765F /* resource.bundle */,
+				C416C1FD1D79875500C0765F /* XTLikePictureView.h */,
+				C416C1FE1D79875500C0765F /* XTLikePictureView.m */,
+				C416C1FF1D79875500C0765F /* XTPictureViewController.h */,
+				C416C2001D79875500C0765F /* XTPictureViewController.m */,
+			);
+			path = "直播图片动画";
+			sourceTree = "<group>";
+		};
+		C416C2011D79875500C0765F /* 雪花效果 */ = {
+			isa = PBXGroup;
+			children = (
+				C416C2021D79875500C0765F /* alpha@2x.png */,
+				C416C2031D79875500C0765F /* EmitterSnowController.h */,
+				C416C2041D79875500C0765F /* EmitterSnowController.m */,
+				C416C2051D79875500C0765F /* snow@2x.png */,
+			);
+			path = "雪花效果";
 			sourceTree = "<group>";
 		};
 		C44C0CD41D7442C80050A648 /* Products */ = {
@@ -569,6 +658,7 @@
 				C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */,
 				C416C1EB1D7968F500C0765F /* PlayerShowInfoView.swift */,
 				C416C1ED1D7975CF00C0765F /* InfoPlayerShowView.xib */,
+				C416C2121D7987BA00C0765F /* InfoPlayerShowView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -708,6 +798,7 @@
 		C48907E81D74319700B9B0DB /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				C416C1EF1D79875500C0765F /* 礼物效果 */,
 				C416C1E51D79664100C0765F /* MBProgressHUD */,
 				C416C1C61D794EB100C0765F /* Loggerithm */,
 				C4E4B1F11D787F4C0054C139 /* IJKMediaFramework.framework */,
@@ -1062,9 +1153,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C416C1EE1D7975CF00C0765F /* InfoPlayerShowView.xib in Resources */,
+				C416C2111D79875500C0765F /* snow@2x.png in Resources */,
+				C416C20A1D79875500C0765F /* FFTspark.png in Resources */,
 				C48907C51D7430DC00B9B0DB /* LaunchScreen.storyboard in Resources */,
 				C4E4B1F51D787FB80054C139 /* Assets.xcassets in Resources */,
+				C416C2061D79875500C0765F /* darong.png in Resources */,
 				C48907C01D7430DC00B9B0DB /* Main.storyboard in Resources */,
+				C416C2091D79875500C0765F /* FFRing.png in Resources */,
+				C416C20F1D79875500C0765F /* alpha@2x.png in Resources */,
+				C416C20C1D79875500C0765F /* resource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1097,6 +1194,8 @@
 				C4AD60B21D76D9D700091BCC /* MainNavigationViewController.swift in Sources */,
 				C44C0D931D76BB8C0050A648 /* Reflect+Parse.swift in Sources */,
 				C44C0D731D757C720050A648 /* LiveViewCOntroller.swift in Sources */,
+				C416C2131D7987BA00C0765F /* InfoPlayerShowView.swift in Sources */,
+				C416C2101D79875500C0765F /* EmitterSnowController.m in Sources */,
 				C4AD60981D76D7B500091BCC /* commonHeader.swift in Sources */,
 				C44C0D621D7533E30050A648 /* RAMAnimatedTabBarController.swift in Sources */,
 				C44C0D951D76BB8C0050A648 /* Reflect+Class.swift in Sources */,
@@ -1114,10 +1213,13 @@
 				C416C1E81D79664100C0765F /* MBProgressHUD.m in Sources */,
 				C44C0D491D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 				C44C0D4A1D744D300050A648 /* DGElasticPullToRefreshLoadingViewCircle.swift in Sources */,
+				C416C2071D79875500C0765F /* XTLoveHeartView.m in Sources */,
 				C44C0D821D76A94F0050A648 /* UIColor+HEX.swift in Sources */,
 				C48907BB1D7430DC00B9B0DB /* AppDelegate.swift in Sources */,
 				C44C0D481D744D300050A648 /* DGElasticPullToRefreshExtensions.swift in Sources */,
+				C416C20D1D79875500C0765F /* XTLikePictureView.m in Sources */,
 				C44C0D5E1D7533E30050A648 /* RAMFrameItemAnimation.swift in Sources */,
+				C416C2081D79875500C0765F /* XTLoveHeartViewController.m in Sources */,
 				C44C0D5D1D7533E30050A648 /* RAMBounceAnimation.swift in Sources */,
 				C4AD60B41D76E63F00091BCC /* PlayerLiveViewController.swift in Sources */,
 				C44C0D611D7533E30050A648 /* RAMTransitionItemAnimations.swift in Sources */,
@@ -1125,8 +1227,10 @@
 				C416C1CC1D794EB100C0765F /* Type.swift in Sources */,
 				C44C0D641D7533E30050A648 /* RAMItemAnimationProtocol.swift in Sources */,
 				C44C0D971D76BB8C0050A648 /* Reflect+Property.swift in Sources */,
+				C416C20E1D79875500C0765F /* XTPictureViewController.m in Sources */,
 				C44C0D961D76BB8C0050A648 /* Reflect+Other.swift in Sources */,
 				C44C0D941D76BB8C0050A648 /* Reflect+Convert.swift in Sources */,
+				C416C20B1D79875500C0765F /* ViewController1.m in Sources */,
 				C44C0D921D76BB8C0050A648 /* Reflect+ArcFile.swift in Sources */,
 				C44C0D841D76B5960050A648 /* NetWork.swift in Sources */,
 				C416C1EC1D7968F500C0765F /* PlayerShowInfoView.swift in Sources */,
