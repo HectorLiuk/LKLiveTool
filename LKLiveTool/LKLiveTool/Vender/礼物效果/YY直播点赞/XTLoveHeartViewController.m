@@ -21,7 +21,7 @@
     imageView.image = [UIImage imageNamed:@"darong"];
     [self.view addSubview:imageView];
     
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:0.25 target:self selector:@selector(showLoveHeartView) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:0.25 target:self selector:@selector(showLoveHeartView) userInfo:nil repeats:YES];
     
 }
 - (void)showLoveHeartView

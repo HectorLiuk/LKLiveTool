@@ -50,11 +50,6 @@ class PlayerLiveViewController: BasicViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
-        
-        //准备播放
-        if player!.isPlaying() == false {
-            player!.prepareToPlay()
-        }
     }
     
     
@@ -70,7 +65,7 @@ class PlayerLiveViewController: BasicViewController {
         addMovieNotificationObservers()
         
         
-        let inforView = PlayerShowInfoView()
+        let inforView = PlayerShowInfoView(model: homeData!)
         view.addSubview(inforView)
         
         
@@ -88,7 +83,7 @@ class PlayerLiveViewController: BasicViewController {
         let options = IJKFFOptions.optionsByDefault()
         
         //开启硬编码 会出现画声音不同
-//        options.setPlayerOptionIntValue(1, forKey: "videotoolbox")
+        options.setPlayerOptionIntValue(1, forKey: "videotoolbox")
         
         // 帧速率(fps) （可以改，确认非标准桢率会导致音画不同步，所以只能设定为15或者29.97  一般默认就好不需要设置）
 //        options.setPlayerOptionIntValue(15 , forKey: "r")
@@ -97,16 +92,15 @@ class PlayerLiveViewController: BasicViewController {
         options.setPlayerOptionIntValue(256, forKey: "vol")
         
         //播放器设置
-        player = IJKFFMoviePlayerController(contentURLString: homeData?.stream_addr, withOptions: nil)
+        player = IJKFFMoviePlayerController(contentURLString: homeData?.stream_addr, withOptions: options)
         
         player?.scalingMode = .AspectFill
         
         // 设置自动播放(必须设置为NO, 防止自动播放, 才能更好的控制直播的状态)
         player.shouldAutoplay = false
         
-        // 准备播放
-        player.prepareToPlay()
-
+        //准备播放
+        player!.prepareToPlay()
         
         
         playerView = (player?.view)!
@@ -223,8 +217,6 @@ class PlayerLiveViewController: BasicViewController {
                 
             }
             
-            
-
         }else if loadState.rawValue == 4 {
             log.info("网络加载时状态更改:  IJKMPMovieLoadStateStalled(网速不佳播放将要自动暂停)  \(player.loadState)" )
             

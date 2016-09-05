@@ -12,7 +12,7 @@ import UIKit
 extension UIColor {
     
     //HEX颜色 16进制
-   class public func hexColor(hexString: String) -> UIColor{
+  public class func hexColor(hexString: String) -> UIColor{
         var cString: String = hexString.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceAndNewlineCharacterSet())
         
         if cString.characters.count < 6 {return UIColor.blackColor()}

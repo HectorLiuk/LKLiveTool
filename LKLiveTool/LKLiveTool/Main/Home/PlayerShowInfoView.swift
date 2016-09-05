@@ -10,19 +10,40 @@ import UIKit
 
 class PlayerShowInfoView: UIScrollView {
     
+    var homeData : HomeModel? 
+    
     private  lazy var infoPlayerView: UIView = {
-        let infoPlayerView = NSBundle.mainBundle().loadNibNamed("InfoPlayerShowView", owner: self, options: nil)[0]as!UIView
+        let infoPlayerView = NSBundle.mainBundle().loadNibNamed("InfoPlayerShowView", owner: self, options: nil)[0] as! InfoPlayerShowView
+        infoPlayerView.homeData = self.homeData
         infoPlayerView.frame = CGRectMake(screenWidth, 0, screenWidth, screenHeight)
 
         return infoPlayerView
     }()
     
-    convenience init() {
-        self.init(frame: UIScreen.mainScreen().bounds)
-    }
-
-    override init(frame: CGRect) {
-        super.init(frame: CGRectMake(0, 0, screenWidth, screenHeight))
+//    convenience init() {
+//        self.init(frame: UIScreen.mainScreen().bounds)
+//    }
+//
+//    override init(frame: CGRect) {
+//        super.init(frame: CGRectMake(0, 0, screenWidth, screenHeight))
+//        showsVerticalScrollIndicator = false
+//        showsHorizontalScrollIndicator = false
+//        contentSize = CGSizeMake(screenWidth * 2, screenHeight)
+//        bounces = false
+//        delegate = self
+//        pagingEnabled = true
+//        infoPlayerView.backgroundColor = UIColor(colorLiteralRed: 236, green: 236, blue: 236, alpha: 0)
+//        
+//        setContentOffset(CGPointMake(screenWidth, 0), animated: true)
+//        
+//        addSubview(infoPlayerView)
+//        
+        
+//    }
+    
+    init(model: HomeModel) {
+        super.init(frame:  CGRectMake(0, 0, screenWidth, screenHeight))
+        homeData = model
         showsVerticalScrollIndicator = false
         showsHorizontalScrollIndicator = false
         contentSize = CGSizeMake(screenWidth * 2, screenHeight)
@@ -34,8 +55,6 @@ class PlayerShowInfoView: UIScrollView {
         setContentOffset(CGPointMake(screenWidth, 0), animated: true)
         
         addSubview(infoPlayerView)
-        
-        
     }
     
     required init?(coder aDecoder: NSCoder) {

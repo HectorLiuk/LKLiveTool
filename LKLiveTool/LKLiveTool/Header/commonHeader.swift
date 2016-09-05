@@ -33,4 +33,11 @@ public let NavBGColor = UIColor.hexColor("#8fe3d4")
 public let TabBarAndTitleColor = UIColor.hexColor("#FFB304")
 
 
+//MARK: -----
+//MARK: PlayerShowInfoView 直播信息
+/// 显示直播信息 label半灰色
+public let showLivingGrayColor = UIColor(red: 57, green: 57, blue: 57, alpha: 0.3)
+
+
+
 

@@ -69,6 +69,7 @@
 		C48907C51D7430DC00B9B0DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48907C31D7430DC00B9B0DB /* LaunchScreen.storyboard */; };
 		C48907D01D7430DC00B9B0DB /* LKLiveToolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907CF1D7430DC00B9B0DB /* LKLiveToolTests.swift */; };
 		C48907DB1D7430DC00B9B0DB /* LKLiveToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907DA1D7430DC00B9B0DB /* LKLiveToolUITests.swift */; };
+		C49523A51D7D1CA200CA143C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49523A41D7D1CA200CA143C /* UIView+Extension.swift */; };
 		C4AD60981D76D7B500091BCC /* commonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60971D76D7B500091BCC /* commonHeader.swift */; };
 		C4AD60B21D76D9D700091BCC /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */; };
 		C4AD60B41D76E63F00091BCC /* PlayerLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */; };
@@ -386,6 +387,7 @@
 		C48907D61D7430DC00B9B0DB /* LKLiveToolUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LKLiveToolUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48907DA1D7430DC00B9B0DB /* LKLiveToolUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LKLiveToolUITests.swift; sourceTree = "<group>"; };
 		C48907DC1D7430DC00B9B0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49523A41D7D1CA200CA143C /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		C4AD60971D76D7B500091BCC /* commonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commonHeader.swift; sourceTree = "<group>"; };
 		C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLiveViewController.swift; sourceTree = "<group>"; };
@@ -828,6 +830,7 @@
 			children = (
 				C44C0D811D76A94F0050A648 /* UIColor+HEX.swift */,
 				C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */,
+				C49523A41D7D1CA200CA143C /* UIView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1201,6 +1204,7 @@
 				C44C0D951D76BB8C0050A648 /* Reflect+Class.swift in Sources */,
 				C44C0D0F1D7446A40050A648 /* ImportHeader.swift in Sources */,
 				C44C0D601D7533E30050A648 /* RAMRotationAnimation.swift in Sources */,
+				C49523A51D7D1CA200CA143C /* UIView+Extension.swift in Sources */,
 				C44C0D4B1D744D300050A648 /* DGElasticPullToRefreshView.swift in Sources */,
 				C44C0D981D76BB8C0050A648 /* Reflect+Type.swift in Sources */,
 				C44C0D7B1D758BF80050A648 /* HomeTableViewCell.swift in Sources */,

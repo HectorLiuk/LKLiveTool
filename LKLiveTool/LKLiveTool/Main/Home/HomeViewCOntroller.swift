@@ -74,6 +74,8 @@ class HomeViewCOntroller: BasicViewController {
                 if let JSON = response.result.value {
                     self.dataArray?.removeAll()
                     
+                    log.info(response.result.value!)
+                    
                     let dic = JSON as! NSDictionary
                     let array = dic["lives"] as! NSArray
                     
