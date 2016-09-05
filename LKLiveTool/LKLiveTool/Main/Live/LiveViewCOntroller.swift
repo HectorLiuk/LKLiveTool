@@ -11,8 +11,7 @@ class LiveViewCOntroller: BasicViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        navigationItem.title = "我在直播"
+        view.backgroundColor = UIColor.whiteColor()
     }
 
 }

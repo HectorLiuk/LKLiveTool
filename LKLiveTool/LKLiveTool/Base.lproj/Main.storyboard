@@ -6,25 +6,6 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Live ViewC Ontroller-->
-        <scene sceneID="qWA-Ld-49B">
-            <objects>
-                <viewController id="Sft-ov-39V" customClass="LiveViewCOntroller" customModule="LKLiveTool" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="g5b-T7-wfe"/>
-                        <viewControllerLayoutGuide type="bottom" id="DiS-67-Q26"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="cZo-H5-l9H">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ld1-br-WC0"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eqK-sV-Yce" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-17" y="60"/>
-        </scene>
         <!--Player Live View Controller-->
         <scene sceneID="Rfi-hs-DNv">
             <objects>
@@ -281,9 +262,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="Sft-ov-39V" kind="relationship" relationship="rootViewController" id="qFv-Mi-giI"/>
-                    </connections>
                 </navigationController>
                 <customObject id="DS9-BA-b9c" customClass="RAMBounceAnimation" customModule="LKLiveTool" customModuleProvider="target">
                     <userDefinedRuntimeAttributes>
@@ -340,7 +318,7 @@
         <!--我的-->
         <scene sceneID="z2Y-wK-pL3">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dr0-dx-eO9" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dr0-dx-eO9" customClass="MainNavigationViewController" customModule="LKLiveTool" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="我的" image="Settings_00208" id="KlD-U9-4Lb" customClass="RAMAnimatedTabBarItem" customModule="LKLiveTool" customModuleProvider="target">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="textColor">

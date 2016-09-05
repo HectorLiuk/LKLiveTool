@@ -115,7 +115,7 @@
                     </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKp-Ye-Jeb">
-                    <rect key="frame" x="233" y="607" width="44" height="44"/>
+                    <rect key="frame" x="218" y="607" width="44" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="2nl-JO-bYv"/>
                         <constraint firstAttribute="width" constant="44" id="k7y-gX-nMF"/>
@@ -175,7 +175,7 @@
                 <constraint firstAttribute="bottom" secondItem="MEG-ZG-eS8" secondAttribute="bottom" constant="16" id="a4e-Af-t0f"/>
                 <constraint firstAttribute="bottom" secondItem="JKp-Ye-Jeb" secondAttribute="bottom" constant="16" id="bg4-oz-G4Q"/>
                 <constraint firstAttribute="bottom" secondItem="O9U-tj-0Sa" secondAttribute="bottom" constant="16" id="cPR-T5-XBn"/>
-                <constraint firstItem="JKp-Ye-Jeb" firstAttribute="leading" secondItem="MEG-ZG-eS8" secondAttribute="trailing" constant="20" id="ece-SF-pdb"/>
+                <constraint firstItem="JKp-Ye-Jeb" firstAttribute="leading" secondItem="MEG-ZG-eS8" secondAttribute="trailing" constant="5" id="ece-SF-pdb"/>
                 <constraint firstAttribute="trailing" secondItem="2nO-mC-E4Z" secondAttribute="trailing" constant="8" id="eiz-GM-glm"/>
                 <constraint firstItem="O9U-tj-0Sa" firstAttribute="leading" secondItem="yFd-ej-OJf" secondAttribute="trailing" constant="20" id="ih3-vK-f2o"/>
                 <constraint firstItem="MEG-ZG-eS8" firstAttribute="leading" secondItem="O9U-tj-0Sa" secondAttribute="trailing" constant="10" id="tTu-eN-ouq"/>

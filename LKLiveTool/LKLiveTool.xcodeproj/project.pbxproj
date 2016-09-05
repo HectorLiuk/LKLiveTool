@@ -63,6 +63,8 @@
 		C48907DB1D7430DC00B9B0DB /* LKLiveToolUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907DA1D7430DC00B9B0DB /* LKLiveToolUITests.swift */; };
 		C49523A51D7D1CA200CA143C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49523A41D7D1CA200CA143C /* UIView+Extension.swift */; };
 		C49523C01D7D5BE900CA143C /* YanHuaView.m in Sources */ = {isa = PBXBuildFile; fileRef = C49523BF1D7D5BE900CA143C /* YanHuaView.m */; };
+		C49523C21D7D76CD00CA143C /* Living.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C49523C11D7D76CD00CA143C /* Living.storyboard */; };
+		C49523C61D7D7B4C00CA143C /* UIDevice+SLExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = C49523C51D7D7B4C00CA143C /* UIDevice+SLExtension.m */; };
 		C4AD60981D76D7B500091BCC /* commonHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60971D76D7B500091BCC /* commonHeader.swift */; };
 		C4AD60B21D76D9D700091BCC /* MainNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */; };
 		C4AD60B41D76E63F00091BCC /* PlayerLiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */; };
@@ -370,6 +372,10 @@
 		C49523A41D7D1CA200CA143C /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		C49523BE1D7D5BE900CA143C /* YanHuaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YanHuaView.h; sourceTree = "<group>"; };
 		C49523BF1D7D5BE900CA143C /* YanHuaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YanHuaView.m; sourceTree = "<group>"; };
+		C49523C11D7D76CD00CA143C /* Living.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Living.storyboard; sourceTree = "<group>"; };
+		C49523C41D7D7B4C00CA143C /* UIDevice+SLExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+SLExtension.h"; sourceTree = "<group>"; };
+		C49523C51D7D7B4C00CA143C /* UIDevice+SLExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+SLExtension.m"; sourceTree = "<group>"; };
+		C49523C71D7D869400CA143C /* LKLiveTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LKLiveTool.entitlements; sourceTree = "<group>"; };
 		C4AD60971D76D7B500091BCC /* commonHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = commonHeader.swift; sourceTree = "<group>"; };
 		C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationViewController.swift; sourceTree = "<group>"; };
 		C4AD60B31D76E63F00091BCC /* PlayerLiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerLiveViewController.swift; sourceTree = "<group>"; };
@@ -722,6 +728,7 @@
 		C48907B91D7430DC00B9B0DB /* LKLiveTool */ = {
 			isa = PBXGroup;
 			children = (
+				C49523C71D7D869400CA143C /* LKLiveTool.entitlements */,
 				C44C0D7E1D768C6A0050A648 /* Tool */,
 				C44C0D691D7554B40050A648 /* Superclass */,
 				C44C0D4C1D744DB00050A648 /* Resource */,
@@ -783,6 +790,7 @@
 		C48907F01D74374500B9B0DB /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				C49523C31D7D7B4C00CA143C /* Device */,
 				C44C0D811D76A94F0050A648 /* UIColor+HEX.swift */,
 				C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */,
 				C49523A41D7D1CA200CA143C /* UIView+Extension.swift */,
@@ -796,11 +804,21 @@
 				C48907C61D7430DC00B9B0DB /* Info.plist */,
 				C48907C31D7430DC00B9B0DB /* LaunchScreen.storyboard */,
 				C48907BE1D7430DC00B9B0DB /* Main.storyboard */,
+				C49523C11D7D76CD00CA143C /* Living.storyboard */,
 				C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */,
 				C44C0D761D757F940050A648 /* MainTabBarController.swift */,
 				C4AD60B11D76D9D700091BCC /* MainNavigationViewController.swift */,
 			);
 			path = Root;
+			sourceTree = "<group>";
+		};
+		C49523C31D7D7B4C00CA143C /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				C49523C41D7D7B4C00CA143C /* UIDevice+SLExtension.h */,
+				C49523C51D7D7B4C00CA143C /* UIDevice+SLExtension.m */,
+			);
+			path = Device;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -876,6 +894,11 @@
 					C48907B61D7430DC00B9B0DB = {
 						CreatedOnToolsVersion = 7.3.1;
 						DevelopmentTeam = HHFXH99F52;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
 					};
 					C48907CA1D7430DC00B9B0DB = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -1112,6 +1135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C416C1EE1D7975CF00C0765F /* InfoPlayerShowView.xib in Resources */,
+				C49523C21D7D76CD00CA143C /* Living.storyboard in Resources */,
 				C416C20A1D79875500C0765F /* FFTspark.png in Resources */,
 				C48907C51D7430DC00B9B0DB /* LaunchScreen.storyboard in Resources */,
 				C4E4B1F51D787FB80054C139 /* Assets.xcassets in Resources */,
@@ -1164,6 +1188,7 @@
 				C416C1CA1D794EB100C0765F /* Color.swift in Sources */,
 				C44C0D751D757C880050A648 /* MyViewController.swift in Sources */,
 				C44C0D631D7533E30050A648 /* RAMBadge.swift in Sources */,
+				C49523C61D7D7B4C00CA143C /* UIDevice+SLExtension.m in Sources */,
 				C44C0D6D1D7555370050A648 /* HomeViewCOntroller.swift in Sources */,
 				C416C1CB1D794EB100C0765F /* Loggerithm.swift in Sources */,
 				C416C1E81D79664100C0765F /* MBProgressHUD.m in Sources */,
@@ -1349,7 +1374,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jiang jiayi (SHX74297A2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1375,7 +1400,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Beijing Puhuitong Data Information Technology Co., Ltd.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

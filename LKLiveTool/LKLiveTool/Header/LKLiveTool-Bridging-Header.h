@@ -6,5 +6,5 @@
 #import "MBProgressHUD.h"
 #import "XTLoveHeartView.h"
 #import "YanHuaView.h"
-//#import "EmitterSnowController.h"
+#import "UIDevice+SLExtension.h"
 //#import "XTPictureViewController.h"
