@@ -20,27 +20,6 @@ class PlayerShowInfoView: UIScrollView {
         return infoPlayerView
     }()
     
-//    convenience init() {
-//        self.init(frame: UIScreen.mainScreen().bounds)
-//    }
-//
-//    override init(frame: CGRect) {
-//        super.init(frame: CGRectMake(0, 0, screenWidth, screenHeight))
-//        showsVerticalScrollIndicator = false
-//        showsHorizontalScrollIndicator = false
-//        contentSize = CGSizeMake(screenWidth * 2, screenHeight)
-//        bounces = false
-//        delegate = self
-//        pagingEnabled = true
-//        infoPlayerView.backgroundColor = UIColor(colorLiteralRed: 236, green: 236, blue: 236, alpha: 0)
-//        
-//        setContentOffset(CGPointMake(screenWidth, 0), animated: true)
-//        
-//        addSubview(infoPlayerView)
-//        
-        
-//    }
-    
     init(model: HomeModel) {
         super.init(frame:  CGRectMake(0, 0, screenWidth, screenHeight))
         homeData = model
@@ -55,11 +34,14 @@ class PlayerShowInfoView: UIScrollView {
         setContentOffset(CGPointMake(screenWidth, 0), animated: true)
         
         addSubview(infoPlayerView)
+        
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     
     
 

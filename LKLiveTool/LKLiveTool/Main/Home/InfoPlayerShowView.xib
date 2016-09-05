@@ -123,12 +123,12 @@
                     <rect key="frame" x="10" y="77" width="161" height="31"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chat_message_go" translatesAutoresizingMaskIntoConstraints="NO" id="fnl-4F-5mb">
-                            <rect key="frame" x="128" y="3" width="25" height="25"/>
+                            <rect key="frame" x="133" y="3" width="20" height="25"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="25" id="4mu-1C-lsa"/>
+                                <constraint firstAttribute="width" constant="20" id="4mu-1C-lsa"/>
                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="LP2-75-tpX"/>
                                 <constraint firstAttribute="height" constant="25" id="Y0m-6e-LXL"/>
-                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="rJY-SR-GKD"/>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="rJY-SR-GKD"/>
                             </constraints>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFe-wu-Nn1">

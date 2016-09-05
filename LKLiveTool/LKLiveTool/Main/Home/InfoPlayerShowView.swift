@@ -31,6 +31,12 @@ class InfoPlayerShowView: UIView {
     @IBOutlet weak var AnchorScrollView: UIScrollView!
     
     
+    var peopleRandomTimer: NSTimer!
+    
+    var loveGift: NSTimer!
+    
+    var array: [String]!
+    
     
     
     var homeData : HomeModel? {
@@ -57,12 +63,34 @@ class InfoPlayerShowView: UIView {
         topOpenBtn.cornerRadiusToBounds(10)
         topImage.cornerRadiusToBounds(18)
         
-        NSTimer.scheduledTimerWithTimeInterval(0.25, target: self, selector: #selector(InfoPlayerShowView.showImage), userInfo: nil, repeats: true)
+        peopleRandomTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(InfoPlayerShowView.updataTopViewLableInfo), userInfo: nil, repeats: true)
+
+        loveGift = NSTimer.scheduledTimerWithTimeInterval(0.25, target: self, selector: #selector(InfoPlayerShowView.showImage), userInfo: nil, repeats: true)
+        
+        
         
     }
     
+    //MARK: 模拟实时数据跟新
+    func updataTopViewLableInfo() {
+        let randomCount = (Int)(arc4random_uniform(100))+1
+        let watchPeopleCount = NSInteger((homeData?.online_users)!) + randomCount
+        
+        toPeppleCountLabel.text = "\(watchPeopleCount)"
+        ticketLabel.text = "映票:\(666666+randomCount)"
+        
+    }
     
+    deinit {
+        peopleRandomTimer.invalidate()
+        loveGift.invalidate()
+        peopleRandomTimer = nil
+        loveGift = nil
+        
+    }
     
+    //MARK: --------------
+    //MARK: 按钮点击触发事件
     @IBAction func openClick(sender: UIButton) {
         sender.selected = !sender.selected
     }
