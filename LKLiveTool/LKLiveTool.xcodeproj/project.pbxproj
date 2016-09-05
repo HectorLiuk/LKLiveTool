@@ -18,12 +18,6 @@
 		C416C2071D79875500C0765F /* XTLoveHeartView.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C1F31D79875500C0765F /* XTLoveHeartView.m */; };
 		C416C2091D79875500C0765F /* FFRing.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C1F71D79875500C0765F /* FFRing.png */; };
 		C416C20A1D79875500C0765F /* FFTspark.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C1F81D79875500C0765F /* FFTspark.png */; };
-		C416C20C1D79875500C0765F /* resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C416C1FC1D79875500C0765F /* resource.bundle */; };
-		C416C20D1D79875500C0765F /* XTLikePictureView.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C1FE1D79875500C0765F /* XTLikePictureView.m */; };
-		C416C20E1D79875500C0765F /* XTPictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C2001D79875500C0765F /* XTPictureViewController.m */; };
-		C416C20F1D79875500C0765F /* alpha@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C2021D79875500C0765F /* alpha@2x.png */; };
-		C416C2101D79875500C0765F /* EmitterSnowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C2041D79875500C0765F /* EmitterSnowController.m */; };
-		C416C2111D79875500C0765F /* snow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C2051D79875500C0765F /* snow@2x.png */; };
 		C416C2131D7987BA00C0765F /* InfoPlayerShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C2121D7987BA00C0765F /* InfoPlayerShowView.swift */; };
 		C44C0CEC1D7442F70050A648 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CDF1D7442C80050A648 /* Alamofire.framework */; };
 		C44C0CED1D7442F70050A648 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CDF1D7442C80050A648 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -327,15 +321,6 @@
 		C416C1F31D79875500C0765F /* XTLoveHeartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTLoveHeartView.m; sourceTree = "<group>"; };
 		C416C1F71D79875500C0765F /* FFRing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FFRing.png; sourceTree = "<group>"; };
 		C416C1F81D79875500C0765F /* FFTspark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FFTspark.png; sourceTree = "<group>"; };
-		C416C1FC1D79875500C0765F /* resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = resource.bundle; sourceTree = "<group>"; };
-		C416C1FD1D79875500C0765F /* XTLikePictureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTLikePictureView.h; sourceTree = "<group>"; };
-		C416C1FE1D79875500C0765F /* XTLikePictureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTLikePictureView.m; sourceTree = "<group>"; };
-		C416C1FF1D79875500C0765F /* XTPictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTPictureViewController.h; sourceTree = "<group>"; };
-		C416C2001D79875500C0765F /* XTPictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTPictureViewController.m; sourceTree = "<group>"; };
-		C416C2021D79875500C0765F /* alpha@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alpha@2x.png"; sourceTree = "<group>"; };
-		C416C2031D79875500C0765F /* EmitterSnowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmitterSnowController.h; sourceTree = "<group>"; };
-		C416C2041D79875500C0765F /* EmitterSnowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmitterSnowController.m; sourceTree = "<group>"; };
-		C416C2051D79875500C0765F /* snow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snow@2x.png"; sourceTree = "<group>"; };
 		C416C2121D7987BA00C0765F /* InfoPlayerShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPlayerShowView.swift; sourceTree = "<group>"; };
 		C44C0CD31D7442C80050A648 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		C44C0CF01D7443E00050A648 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
@@ -448,8 +433,6 @@
 			children = (
 				C416C1F01D79875500C0765F /* YY直播点赞 */,
 				C416C1F61D79875500C0765F /* 烟花 */,
-				C416C1FB1D79875500C0765F /* 直播图片动画 */,
-				C416C2011D79875500C0765F /* 雪花效果 */,
 			);
 			path = "礼物效果";
 			sourceTree = "<group>";
@@ -473,29 +456,6 @@
 				C49523BF1D7D5BE900CA143C /* YanHuaView.m */,
 			);
 			path = "烟花";
-			sourceTree = "<group>";
-		};
-		C416C1FB1D79875500C0765F /* 直播图片动画 */ = {
-			isa = PBXGroup;
-			children = (
-				C416C1FC1D79875500C0765F /* resource.bundle */,
-				C416C1FD1D79875500C0765F /* XTLikePictureView.h */,
-				C416C1FE1D79875500C0765F /* XTLikePictureView.m */,
-				C416C1FF1D79875500C0765F /* XTPictureViewController.h */,
-				C416C2001D79875500C0765F /* XTPictureViewController.m */,
-			);
-			path = "直播图片动画";
-			sourceTree = "<group>";
-		};
-		C416C2011D79875500C0765F /* 雪花效果 */ = {
-			isa = PBXGroup;
-			children = (
-				C416C2021D79875500C0765F /* alpha@2x.png */,
-				C416C2031D79875500C0765F /* EmitterSnowController.h */,
-				C416C2041D79875500C0765F /* EmitterSnowController.m */,
-				C416C2051D79875500C0765F /* snow@2x.png */,
-			);
-			path = "雪花效果";
 			sourceTree = "<group>";
 		};
 		C44C0CD41D7442C80050A648 /* Products */ = {
@@ -1152,15 +1112,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C416C1EE1D7975CF00C0765F /* InfoPlayerShowView.xib in Resources */,
-				C416C2111D79875500C0765F /* snow@2x.png in Resources */,
 				C416C20A1D79875500C0765F /* FFTspark.png in Resources */,
 				C48907C51D7430DC00B9B0DB /* LaunchScreen.storyboard in Resources */,
 				C4E4B1F51D787FB80054C139 /* Assets.xcassets in Resources */,
 				C416C2061D79875500C0765F /* darong.png in Resources */,
 				C48907C01D7430DC00B9B0DB /* Main.storyboard in Resources */,
 				C416C2091D79875500C0765F /* FFRing.png in Resources */,
-				C416C20F1D79875500C0765F /* alpha@2x.png in Resources */,
-				C416C20C1D79875500C0765F /* resource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1194,7 +1151,6 @@
 				C44C0D931D76BB8C0050A648 /* Reflect+Parse.swift in Sources */,
 				C44C0D731D757C720050A648 /* LiveViewCOntroller.swift in Sources */,
 				C416C2131D7987BA00C0765F /* InfoPlayerShowView.swift in Sources */,
-				C416C2101D79875500C0765F /* EmitterSnowController.m in Sources */,
 				C4AD60981D76D7B500091BCC /* commonHeader.swift in Sources */,
 				C44C0D621D7533E30050A648 /* RAMAnimatedTabBarController.swift in Sources */,
 				C44C0D951D76BB8C0050A648 /* Reflect+Class.swift in Sources */,
@@ -1217,7 +1173,6 @@
 				C44C0D821D76A94F0050A648 /* UIColor+HEX.swift in Sources */,
 				C48907BB1D7430DC00B9B0DB /* AppDelegate.swift in Sources */,
 				C44C0D481D744D300050A648 /* DGElasticPullToRefreshExtensions.swift in Sources */,
-				C416C20D1D79875500C0765F /* XTLikePictureView.m in Sources */,
 				C44C0D5E1D7533E30050A648 /* RAMFrameItemAnimation.swift in Sources */,
 				C44C0D5D1D7533E30050A648 /* RAMBounceAnimation.swift in Sources */,
 				C4AD60B41D76E63F00091BCC /* PlayerLiveViewController.swift in Sources */,
@@ -1227,7 +1182,6 @@
 				C44C0D641D7533E30050A648 /* RAMItemAnimationProtocol.swift in Sources */,
 				C49523C01D7D5BE900CA143C /* YanHuaView.m in Sources */,
 				C44C0D971D76BB8C0050A648 /* Reflect+Property.swift in Sources */,
-				C416C20E1D79875500C0765F /* XTPictureViewController.m in Sources */,
 				C44C0D961D76BB8C0050A648 /* Reflect+Other.swift in Sources */,
 				C44C0D941D76BB8C0050A648 /* Reflect+Convert.swift in Sources */,
 				C44C0D921D76BB8C0050A648 /* Reflect+ArcFile.swift in Sources */,
