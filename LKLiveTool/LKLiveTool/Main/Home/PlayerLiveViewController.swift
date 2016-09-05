@@ -50,6 +50,7 @@ class PlayerLiveViewController: BasicViewController {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: true)
         UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
+        
     }
     
     
@@ -65,7 +66,7 @@ class PlayerLiveViewController: BasicViewController {
         addMovieNotificationObservers()
         
         
-        let inforView = PlayerShowInfoView(model: homeData!)
+        let inforView = PlayerShowInfoView(model: homeData!, play: player)
         view.addSubview(inforView)
         
         
@@ -96,10 +97,12 @@ class PlayerLiveViewController: BasicViewController {
         
         player?.scalingMode = .AspectFill
         
-        // 设置自动播放(必须设置为NO, 防止自动播放, 才能更好的控制直播的状态)
-        player.shouldAutoplay = false
+        // 设置自动播放(必须设置为NO, 防止自动播放, 才能更好的控制直播的状态) 必须调用play() 方法才能开启直播。
+//        player.shouldAutoplay = false
+//        player.play()
         
-        //准备播放
+        
+        //准备播放 不需要我们手动开启直播 不需要调用play()
         player!.prepareToPlay()
         
         
@@ -212,10 +215,10 @@ class PlayerLiveViewController: BasicViewController {
             
         }else if loadState.rawValue == 3 {
             log.info("网络加载时状态更改:  IJKMovieLoadStatePlayThroughOK(播放将要自动开始状态)  \(player.loadState)" )
-            if !player.isPlaying() {
-                player.play()
-                
-            }
+//            if !player.isPlaying() {
+//                player.play()
+//                
+//            }
             
         }else if loadState.rawValue == 4 {
             log.info("网络加载时状态更改:  IJKMPMovieLoadStateStalled(网速不佳播放将要自动暂停)  \(player.loadState)" )

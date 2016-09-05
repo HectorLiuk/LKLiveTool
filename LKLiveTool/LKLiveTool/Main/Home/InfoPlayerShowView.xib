@@ -90,31 +90,41 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O9U-tj-0Sa">
-                    <rect key="frame" x="83" y="607" width="44" height="44"/>
+                    <rect key="frame" x="83" y="607" width="60" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="AaZ-Uq-R7b"/>
-                        <constraint firstAttribute="width" constant="44" id="jO6-tq-3fH"/>
+                        <constraint firstAttribute="width" constant="60" id="jO6-tq-3fH"/>
                     </constraints>
-                    <state key="normal" image="talk_rank_40x40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" image="talk_rank_40x40">
+                        <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                     <connections>
                         <action selector="beastClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="aLa-sw-NvF"/>
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MEG-ZG-eS8">
-                    <rect key="frame" x="147" y="607" width="44" height="44"/>
+                    <rect key="frame" x="153" y="607" width="60" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="U8B-oV-yPh"/>
-                        <constraint firstAttribute="width" constant="44" id="lKc-Gt-NOj"/>
+                        <constraint firstAttribute="width" constant="60" id="lKc-Gt-NOj"/>
                     </constraints>
-                    <state key="normal" image="talk_sendgift_40x40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" image="talk_sendgift_40x40">
+                        <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKp-Ye-Jeb">
-                    <rect key="frame" x="211" y="607" width="44" height="44"/>
+                    <rect key="frame" x="233" y="607" width="44" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="2nl-JO-bYv"/>
                         <constraint firstAttribute="width" constant="44" id="k7y-gX-nMF"/>
                     </constraints>
-                    <state key="normal" image="talk_share_40x40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" image="暂停">
+                        <color key="titleColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" image="开始"/>
                     <connections>
                         <action selector="shareClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="jca-fn-x2L"/>
                     </connections>
@@ -168,7 +178,7 @@
                 <constraint firstItem="JKp-Ye-Jeb" firstAttribute="leading" secondItem="MEG-ZG-eS8" secondAttribute="trailing" constant="20" id="ece-SF-pdb"/>
                 <constraint firstAttribute="trailing" secondItem="2nO-mC-E4Z" secondAttribute="trailing" constant="8" id="eiz-GM-glm"/>
                 <constraint firstItem="O9U-tj-0Sa" firstAttribute="leading" secondItem="yFd-ej-OJf" secondAttribute="trailing" constant="20" id="ih3-vK-f2o"/>
-                <constraint firstItem="MEG-ZG-eS8" firstAttribute="leading" secondItem="O9U-tj-0Sa" secondAttribute="trailing" constant="20" id="tTu-eN-ouq"/>
+                <constraint firstItem="MEG-ZG-eS8" firstAttribute="leading" secondItem="O9U-tj-0Sa" secondAttribute="trailing" constant="10" id="tTu-eN-ouq"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <connections>
@@ -191,6 +201,7 @@
         <image name="talk_private_40x40" width="40" height="40"/>
         <image name="talk_rank_40x40" width="40" height="40"/>
         <image name="talk_sendgift_40x40" width="40" height="40"/>
-        <image name="talk_share_40x40" width="40" height="40"/>
+        <image name="开始" width="32" height="32"/>
+        <image name="暂停" width="32" height="32"/>
     </resources>
 </document>

@@ -10,19 +10,23 @@ import UIKit
 
 class PlayerShowInfoView: UIScrollView {
     
+    var player : IJKMediaPlayback?
+    
     var homeData : HomeModel? 
     
     private  lazy var infoPlayerView: UIView = {
         let infoPlayerView = NSBundle.mainBundle().loadNibNamed("InfoPlayerShowView", owner: self, options: nil)[0] as! InfoPlayerShowView
         infoPlayerView.homeData = self.homeData
+        infoPlayerView.player = self.player
         infoPlayerView.frame = CGRectMake(screenWidth, 0, screenWidth, screenHeight)
 
         return infoPlayerView
     }()
     
-    init(model: HomeModel) {
+    init(model: HomeModel, play: IJKMediaPlayback) {
         super.init(frame:  CGRectMake(0, 0, screenWidth, screenHeight))
         homeData = model
+        player = play
         showsVerticalScrollIndicator = false
         showsHorizontalScrollIndicator = false
         contentSize = CGSizeMake(screenWidth * 2, screenHeight)

@@ -10,6 +10,8 @@ import UIKit
 
 class InfoPlayerShowView: UIView {
     
+    var player : IJKMediaPlayback?
+    
     //MARK: TopView
     @IBOutlet weak var topTitleView: UIView!
     
@@ -29,6 +31,16 @@ class InfoPlayerShowView: UIView {
     @IBOutlet weak var ticketImage: UIImageView!
     
     @IBOutlet weak var AnchorScrollView: UIScrollView!
+    
+    @IBOutlet weak var giftClick: UIButton!
+
+    //礼物效果
+    /// 跑车
+//    var carGift = 
+    
+    /// 烟花
+    var yanHuaGift = YanHuaView()
+    
     
     
     var peopleRandomTimer: NSTimer!
@@ -95,23 +107,33 @@ class InfoPlayerShowView: UIView {
         sender.selected = !sender.selected
     }
     
-    @IBAction func chatClick(sender: AnyObject) {
-        
-        
-        
-        
-
+    @IBAction func chatClick(sender: UIButton) {
         
     }
    
     
-    @IBAction func beastClick(sender: AnyObject) {
+    //烟花
+    @IBAction func beastClick(sender: UIButton) {
+        sender.selected = !sender.selected
+        if sender.selected {
+            insertSubview(yanHuaGift, atIndex: 0)
+        }else{
+            yanHuaGift.removeFromSuperview()
+        }
     }
     
-    @IBOutlet weak var giftClick: UIButton!
     
-    @IBAction func shareClick(sender: AnyObject) {
+    //暂停直播
+    @IBAction func shareClick(sender: UIButton) {
+        sender.selected = !sender.selected
+        if sender.selected {
+            player!.pause()
+        }else{
+            player!.play()
+        }
     }
+    
+    
     
     func showImage() {
         let anim = XTLoveHeartView(frame:CGRectMake(0, 0, 40, 40))
