@@ -6,6 +6,7 @@
 //  Copyright © 2016年 LK. All rights reserved.
 //
 
+import GPUImage
 
 class LiveViewCOntroller: BasicViewController {
     
