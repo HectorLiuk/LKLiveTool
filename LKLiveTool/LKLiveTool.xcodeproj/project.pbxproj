@@ -252,6 +252,7 @@
 		C473F4681D7E631500F14C7B /* GPUImagePicture+TextureSubimage.m in Sources */ = {isa = PBXBuildFile; fileRef = C473F3B81D7E631500F14C7B /* GPUImagePicture+TextureSubimage.m */; };
 		C473F4691D7E631500F14C7B /* GPUImagePicture.m in Sources */ = {isa = PBXBuildFile; fileRef = C473F3BA1D7E631500F14C7B /* GPUImagePicture.m */; };
 		C473F46A1D7E631500F14C7B /* GPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C473F3BC1D7E631500F14C7B /* GPUImageView.m */; };
+		C473F46F1D7EBEE800F14C7B /* pili-librtmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C473F46E1D7EBEE800F14C7B /* pili-librtmp.framework */; };
 		C48907BB1D7430DC00B9B0DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */; };
 		C48907C01D7430DC00B9B0DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48907BE1D7430DC00B9B0DB /* Main.storyboard */; };
 		C48907C51D7430DC00B9B0DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C48907C31D7430DC00B9B0DB /* LaunchScreen.storyboard */; };
@@ -953,6 +954,7 @@
 		C473F3BA1D7E631500F14C7B /* GPUImagePicture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImagePicture.m; sourceTree = "<group>"; };
 		C473F3BB1D7E631500F14C7B /* GPUImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageView.h; sourceTree = "<group>"; };
 		C473F3BC1D7E631500F14C7B /* GPUImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageView.m; sourceTree = "<group>"; };
+		C473F46E1D7EBEE800F14C7B /* pili-librtmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "pili-librtmp.framework"; sourceTree = "<group>"; };
 		C48907B71D7430DC00B9B0DB /* LKLiveTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LKLiveTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C48907BA1D7430DC00B9B0DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		C48907BF1D7430DC00B9B0DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -988,6 +990,7 @@
 				C4AD60BC1D7806BD00091BCC /* libz.tbd in Frameworks */,
 				C44C0CEC1D7442F70050A648 /* Alamofire.framework in Frameworks */,
 				C44C0D371D7448DE0050A648 /* Kingfisher.framework in Frameworks */,
+				C473F46F1D7EBEE800F14C7B /* pili-librtmp.framework in Frameworks */,
 				C4E4B1F21D787F4C0054C139 /* IJKMediaFramework.framework in Frameworks */,
 				C44C0D081D7443F80050A648 /* SnapKit.framework in Frameworks */,
 			);
@@ -1842,6 +1845,7 @@
 		C48907E81D74319700B9B0DB /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				C473F46E1D7EBEE800F14C7B /* pili-librtmp.framework */,
 				C473F25B1D7E631500F14C7B /* GPUImage */,
 				C473F2021D7E60BF00F14C7B /* LFLiveKit */,
 				C416C1EF1D79875500C0765F /* 礼物效果 */,
