@@ -26,6 +26,8 @@ class LiveViewCOntroller: BasicViewController {
         /// 视频设置  
         let videoConfiguration = LFLiveVideoConfiguration.defaultConfigurationForQuality(.Low3, outputImageOrientation: .Portrait)
         let session = LFLiveSession(audioConfiguration: audioConfiguration, videoConfiguration: videoConfiguration)
+        //美颜度 必须是最高
+        session?.beautyLevel = 1.0
         
         session?.delegate = self
         session?.preView = self.view
