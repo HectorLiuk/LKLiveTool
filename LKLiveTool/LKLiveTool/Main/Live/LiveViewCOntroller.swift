@@ -69,7 +69,8 @@ class LiveViewCOntroller: BasicViewController {
         sender.selected = !sender.selected;
         if (sender.selected) {
             let stream = LFLiveStreamInfo()
-            stream.url = "rtmp://30.96.179.95:1935/live/1234"
+//            rtmp://
+            stream.url = "rtmp://192.168.101.5:1935/rtmplive/room"
             session.startLive(stream)
         } else {
             session.stopLive()
@@ -126,6 +127,35 @@ class LiveViewCOntroller: BasicViewController {
 }
 
 extension LiveViewCOntroller: LFLiveSessionDelegate{
+    
+    func liveSession(session: LFLiveSession?, debugInfo: LFLiveDebug?) {
+        log.info("debugInfo: \(debugInfo?.currentBandwidth)")
+    }
+    
+    func liveSession(session: LFLiveSession?, errorCode: LFLiveSocketErrorCode) {
+        log.info("errorCode: \(errorCode.rawValue)")
+    }
+    
+    func liveSession(session: LFLiveSession?, liveStateDidChange state: LFLiveState) {
+        log.info("liveStateDidChange: \(state.rawValue)")
+        switch state {
+        case LFLiveState.Ready:
+            livingStateLabel.text = "未连接"
+            break;
+        case LFLiveState.Pending:
+            livingStateLabel.text = "连接中"
+            break;
+        case LFLiveState.Start:
+            livingStateLabel.text = "已连接"
+            break;
+        case LFLiveState.Error:
+            livingStateLabel.text = "连接错误"
+            break;
+        case LFLiveState.Stop:
+            livingStateLabel.text = "未连接"
+            break;
+        }
+    }
     
 }
 
