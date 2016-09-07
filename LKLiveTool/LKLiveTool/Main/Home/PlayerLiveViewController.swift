@@ -36,7 +36,7 @@ class PlayerLiveViewController: BasicViewController {
         return coseBtn
     }()
     
-    var player : IJKMediaPlayback!
+    var player : IJKFFMoviePlayerController!
     
     lazy var playerView : UIView = {
         let playerView = UIView(frame: screenBounds)
@@ -64,8 +64,7 @@ class PlayerLiveViewController: BasicViewController {
         startPlayer()
         
         addMovieNotificationObservers()
-        
-        
+                
         let inforView = PlayerShowInfoView(model: homeData!, play: player)
         view.addSubview(inforView)
         

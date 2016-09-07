@@ -10,7 +10,7 @@ import UIKit
 
 class InfoPlayerShowView: UIView {
     
-    var player : IJKMediaPlayback?
+    var player : IJKFFMoviePlayerController?
     
     //MARK: TopView
     @IBOutlet weak var topTitleView: UIView!
@@ -77,7 +77,7 @@ class InfoPlayerShowView: UIView {
         
         peopleRandomTimer = NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: #selector(InfoPlayerShowView.updataTopViewLableInfo), userInfo: nil, repeats: true)
 
-        loveGift = NSTimer.scheduledTimerWithTimeInterval(0.25, target: self, selector: #selector(InfoPlayerShowView.showImage), userInfo: nil, repeats: true)
+        loveGift = NSTimer.scheduledTimerWithTimeInterval(0.25, target: self, selector: #selector(InfoPlayerShowView.showLoveGift), userInfo: nil, repeats: true)
         
         
         
@@ -105,6 +105,8 @@ class InfoPlayerShowView: UIView {
     //MARK: 按钮点击触发事件
     @IBAction func openClick(sender: UIButton) {
         sender.selected = !sender.selected
+        
+         player?.shouldShowHudView = sender.selected
     }
     
     @IBAction func chatClick(sender: UIButton) {
@@ -135,13 +137,14 @@ class InfoPlayerShowView: UIView {
     
     
     
-    func showImage() {
+    func showLoveGift() {
         let anim = XTLoveHeartView(frame:CGRectMake(0, 0, 40, 40))
         addSubview(anim)
-        let fountainSource = CGPointMake(frame.size.width - 80, bounds.size.height - 30 / 2.0 - 10)
+       
+        let fountainSource = CGPointMake( 60, bounds.size.height - 60 )
         anim.center = fountainSource;
         anim.animateInView(self)
-        
+
     }
     
     

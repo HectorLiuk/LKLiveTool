@@ -10,7 +10,7 @@ import UIKit
 
 class PlayerShowInfoView: UIScrollView {
     
-    var player : IJKMediaPlayback?
+    var player : IJKFFMoviePlayerController?
     
     var homeData : HomeModel? 
     
@@ -23,7 +23,7 @@ class PlayerShowInfoView: UIScrollView {
         return infoPlayerView
     }()
     
-    init(model: HomeModel, play: IJKMediaPlayback) {
+    init(model: HomeModel, play: IJKFFMoviePlayerController) {
         super.init(frame:  CGRectMake(0, 0, screenWidth, screenHeight))
         homeData = model
         player = play
