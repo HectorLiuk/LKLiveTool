@@ -35,9 +35,6 @@ class InfoPlayerShowView: UIView {
     @IBOutlet weak var giftClick: UIButton!
 
     //礼物效果
-    /// 跑车
-//    var carGift = 
-    
     /// 烟花
     var yanHuaGift = YanHuaView()
     

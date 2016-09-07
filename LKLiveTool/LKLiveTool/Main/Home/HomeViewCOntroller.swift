@@ -38,7 +38,7 @@ class HomeViewCOntroller: BasicViewController {
         super.viewDidLoad()
         
         requestHomeList()
-        
+                
         addRefreshView()
                 
         
