@@ -3,7 +3,6 @@
 //
 
 #import <IJKMediaFramework/IJKMediaFramework.h>
-#import "MBProgressHUD.h"
 #import "XTLoveHeartView.h"
 #import "YanHuaView.h"
 #import "UIDevice+SLExtension.h"

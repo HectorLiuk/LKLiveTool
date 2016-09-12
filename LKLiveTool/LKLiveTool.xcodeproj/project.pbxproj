@@ -10,7 +10,6 @@
 		C416C1CA1D794EB100C0765F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1C71D794EB100C0765F /* Color.swift */; };
 		C416C1CB1D794EB100C0765F /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1C81D794EB100C0765F /* Loggerithm.swift */; };
 		C416C1CC1D794EB100C0765F /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1C91D794EB100C0765F /* Type.swift */; };
-		C416C1EA1D79672E00C0765F /* MBProgressHUD+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */; };
 		C416C1EC1D7968F500C0765F /* PlayerShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1EB1D7968F500C0765F /* PlayerShowInfoView.swift */; };
 		C416C1EE1D7975CF00C0765F /* InfoPlayerShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C416C1ED1D7975CF00C0765F /* InfoPlayerShowView.xib */; };
 		C416C2061D79875500C0765F /* darong.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C1F11D79875500C0765F /* darong.png */; };
@@ -509,7 +508,6 @@
 		C416C1C71D794EB100C0765F /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C416C1C81D794EB100C0765F /* Loggerithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggerithm.swift; sourceTree = "<group>"; };
 		C416C1C91D794EB100C0765F /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
-		C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Custom.swift"; sourceTree = "<group>"; };
 		C416C1EB1D7968F500C0765F /* PlayerShowInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerShowInfoView.swift; sourceTree = "<group>"; };
 		C416C1ED1D7975CF00C0765F /* InfoPlayerShowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPlayerShowView.xib; sourceTree = "<group>"; };
 		C416C1F11D79875500C0765F /* darong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = darong.png; sourceTree = "<group>"; };
@@ -1865,7 +1863,6 @@
 			children = (
 				C49523C31D7D7B4C00CA143C /* Device */,
 				C44C0D811D76A94F0050A648 /* UIColor+HEX.swift */,
-				C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */,
 				C49523A41D7D1CA200CA143C /* UIView+Extension.swift */,
 			);
 			path = Extension;
@@ -2426,7 +2423,6 @@
 				C473F3E81D7E631500F14C7B /* GPUImageExposureFilter.m in Sources */,
 				C473F2451D7E60BF00F14C7B /* LFGPUImageBeautyFilter.m in Sources */,
 				C44C0D611D7533E30050A648 /* RAMTransitionItemAnimations.swift in Sources */,
-				C416C1EA1D79672E00C0765F /* MBProgressHUD+Custom.swift in Sources */,
 				C473F40C1D7E631500F14C7B /* GPUImageLightenBlendFilter.m in Sources */,
 				C473F4531D7E631500F14C7B /* GPUImageTiltShiftFilter.m in Sources */,
 				C473F4011D7E631500F14C7B /* GPUImageHoughTransformLineDetector.m in Sources */,
