@@ -10,7 +10,6 @@
 		C416C1CA1D794EB100C0765F /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1C71D794EB100C0765F /* Color.swift */; };
 		C416C1CB1D794EB100C0765F /* Loggerithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1C81D794EB100C0765F /* Loggerithm.swift */; };
 		C416C1CC1D794EB100C0765F /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1C91D794EB100C0765F /* Type.swift */; };
-		C416C1E81D79664100C0765F /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C416C1E71D79664100C0765F /* MBProgressHUD.m */; };
 		C416C1EA1D79672E00C0765F /* MBProgressHUD+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */; };
 		C416C1EC1D7968F500C0765F /* PlayerShowInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C1EB1D7968F500C0765F /* PlayerShowInfoView.swift */; };
 		C416C1EE1D7975CF00C0765F /* InfoPlayerShowView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C416C1ED1D7975CF00C0765F /* InfoPlayerShowView.xib */; };
@@ -510,8 +509,6 @@
 		C416C1C71D794EB100C0765F /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		C416C1C81D794EB100C0765F /* Loggerithm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Loggerithm.swift; sourceTree = "<group>"; };
 		C416C1C91D794EB100C0765F /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
-		C416C1E61D79664100C0765F /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
-		C416C1E71D79664100C0765F /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		C416C1E91D79672E00C0765F /* MBProgressHUD+Custom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Custom.swift"; sourceTree = "<group>"; };
 		C416C1EB1D7968F500C0765F /* PlayerShowInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerShowInfoView.swift; sourceTree = "<group>"; };
 		C416C1ED1D7975CF00C0765F /* InfoPlayerShowView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoPlayerShowView.xib; sourceTree = "<group>"; };
@@ -1021,15 +1018,6 @@
 				C416C1C91D794EB100C0765F /* Type.swift */,
 			);
 			path = Loggerithm;
-			sourceTree = "<group>";
-		};
-		C416C1E51D79664100C0765F /* MBProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				C416C1E61D79664100C0765F /* MBProgressHUD.h */,
-				C416C1E71D79664100C0765F /* MBProgressHUD.m */,
-			);
-			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 		C416C1EF1D79875500C0765F /* 礼物效果 */ = {
@@ -1849,7 +1837,6 @@
 				C473F25B1D7E631500F14C7B /* GPUImage */,
 				C473F2021D7E60BF00F14C7B /* LFLiveKit */,
 				C416C1EF1D79875500C0765F /* 礼物效果 */,
-				C416C1E51D79664100C0765F /* MBProgressHUD */,
 				C416C1C61D794EB100C0765F /* Loggerithm */,
 				C4E4B1F11D787F4C0054C139 /* IJKMediaFramework.framework */,
 				C4AD60BB1D7806BD00091BCC /* libz.tbd */,
@@ -2389,7 +2376,6 @@
 				C473F42E1D7E631500F14C7B /* GPUImagePolkaDotFilter.m in Sources */,
 				C473F4051D7E631500F14C7B /* GPUImageiOSBlurFilter.m in Sources */,
 				C473F41A1D7E631500F14C7B /* GPUImageMosaicFilter.m in Sources */,
-				C416C1E81D79664100C0765F /* MBProgressHUD.m in Sources */,
 				C44C0D491D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
 				C473F4021D7E631500F14C7B /* GPUImageHSBFilter.m in Sources */,
 				C473F4111D7E631500F14C7B /* GPUImageLowPassFilter.m in Sources */,
