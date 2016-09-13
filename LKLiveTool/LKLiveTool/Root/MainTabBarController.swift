@@ -13,7 +13,7 @@ class MainTabBarController: RAMAnimatedTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tabBar.backgroundColor = UIColor.whiteColor()
-        self.delegate = self
+        delegate = self
     }
     
     
