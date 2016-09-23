@@ -71,7 +71,7 @@ class LiveViewCOntroller: BasicViewController {
         sender.selected = !sender.selected;
         if (sender.selected) {
             let stream = LFLiveStreamInfo()
-//            rtmp://
+//            rtmp://本人本地的
             stream.url = "rtmp://192.168.101.5:1935/rtmplive/room"
             session.startLive(stream)
         } else {
