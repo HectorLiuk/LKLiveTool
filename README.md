@@ -1,16 +1,22 @@
 #####运行此程序报错（报缺少IJKMediaFramework.framework的错误），请下载[IJKMediaFramework.framework](https://pan.baidu.com/s/1eSLRmme)解压IJKMediaFramework.framework.zip后直接拖进工程运行即可。
 # LKLiveTool
-#### 此APP使用`OC`和`Swift`混编以及`storyboard`,本着能不用代码就不用代码原则。其中`IJKMediaFramework`和`pili-librtmp`使用OC，其他使用Swift(不断跟换)。通过抓取映客的接口实现直播，推流使用的搭建本地服务器实现推流。没有完全照搬映客APP,主要是为了熟悉Swift下常用三方库的使用。所以此App不是高仿只是Demo但是基本直播功能均已实现。最近公司活较少经常跟新后期也会不定时添加新功能。
-#### 在写之前参考了很多前辈的代码以及对直播整体有一个大概流程了解。在不断挖坑填坑(下方有关直播资料链接地址)。
+#### 此APP使用`OC`和`Swift`混编,UI全部采用SB搭建。其中`IJKMediaFramework`和`pili-librtmp`使用OC，其他使用Swift(不断跟换)。通过抓取映客的接口实现直播，推流使用的搭建本地服务器实现推流。没有完全照搬映客APP,主要是为了熟悉Swift下常用三方库的使用。所以此App不是高仿只是Demo但是基本直播功能均已实现。
+#### 最近公司活较少经常跟新后期也会不定时添加新功能。
+#### 在写之前参考了很多前辈的代码以及对调研直播技术，对想写直播同学们提个建议一定要对整体有一个大概流程了解。本人在不断挖坑填坑中(下方有关直播资料链接地址)。
 
-##扫描下放二维码即可通过蒲公英下载
 
 
 ##两大模块
 ###1. 播放端
 - 播放器采用[ijkplayer](https://github.com/Bilibili/ijkplayer),是基于FFmpeg的跨平台播放器针对RTMP优化，开源项目已经被多个App使用，其中映客、美拍和斗鱼使用了。这是已经打包好的直接导入就好[IJKMediaFramework.framework](https://pan.baidu.com/s/1eSLRmme)
+- 接口采用映客的只支持刷新(最置顶5条)，没有抓到加载接口。。。。。。
 
-- 礼物已经有许多造好的轮子直接拿过来用就好。 [弹幕](https://github.com/unash/BarrageRenderer)。
+- 礼物已经有许多造好的轮子直接拿过来用就好，还有一些模仿着写。 [弹幕](https://github.com/unash/BarrageRenderer)。
+
+ <img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show1.png" width="200">
+<img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show2.png" width="200"><br/>
+<img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show3.png" width="200">
+<img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show4.png" width="200"><br/>
 
 ###2. 采集端
 - 技术点特别多但是三方框架方法已经写好直接调用就好注释还是中文的。[LFLiveKit](https://github.com/LaiFengiOS/LFLiveKit)
