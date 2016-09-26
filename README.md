@@ -30,7 +30,8 @@
 ###2. 采集端
 - 技术点特别多但是三方框架方法已经写好直接调用就好注释还是中文的。[LFLiveKit](https://github.com/LaiFengiOS/LFLiveKit)
 - 关于本地服务器的搭建[快速集成iOS基于RTMP的视频推流](http://www.jianshu.com/p/8ea016b2720e)
-<img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show9.png" width="200"><br/>
+
+<img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/Show9.PNG" width="200">
 
 ##请下载Demo自己去尝试
 
