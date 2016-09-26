@@ -12,9 +12,10 @@
 - 接口采用映客的只支持刷新(最置顶5条)，没有抓到加载接口。。。。。。
 
 - 礼物已经有许多造好的轮子直接拿过来用就好，还有一些模仿着写。 [弹幕](https://github.com/unash/BarrageRenderer)。
+- 关于`ijkplayer`方法使用在Demo中已经有详细注释。
 
  <img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show1.png" width="200">
-<img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show2.png" width="200"><br/>
+<img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show2.png" width="200">
 <img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show3.png" width="200">
 <img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show4.png" width="200"><br/>
 
