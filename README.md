@@ -4,6 +4,14 @@
 #### 最近公司活较少经常跟新后期也会不定时添加新功能。
 #### 在写之前参考了很多前辈的代码以及对调研直播技术，对想写直播同学们提个建议一定要对整体有一个大概流程了解。本人在不断挖坑填坑中(下方有关直播资料链接地址)。
 
+## 技术点介绍：
+####直播可以分为：采集，处理(美颜...)，编码，传输, 服务器处理，解码渲染
+- 采集: iOS系统因为软硬件适配性比较好, 只要能熟练运用三方库就好。
+- 处理: 美颜,模糊效果, 水印...,直接运用[GPUImage](https://github.com/BradLarson/GPUImage)。
+- 编码: 重难点在于要在分辨率，帧率，码率，GOP等参数设计上找到最佳平衡点[I,P,B帧和PTS,DTS的关系,GOP相关](http://blog.csdn.net/wudebao5220150/article/details/13811321)。 
+- 传输: 各大厂商都会提供SDK，网易直播云、七牛、腾讯、百度、新浪。使用直播云的就是能快速上线App，功能十分齐全，可以播放器和推流端，集成速度快就是流量费太贵了。
+- 服务器处理: 让推送上来的流适配各个平台各种不同的协议, 比如:RTMP,HLS,FLV...
+- 解码渲染: 从服务器获取数据播放，这里就会遇到软硬解码问题[区别](http://blog.csdn.net/xiangjai/article/details/12653203)，还有音画同步。
 
 
 ##两大模块
@@ -22,6 +30,7 @@
 ###2. 采集端
 - 技术点特别多但是三方框架方法已经写好直接调用就好注释还是中文的。[LFLiveKit](https://github.com/LaiFengiOS/LFLiveKit)
 - 关于本地服务器的搭建[快速集成iOS基于RTMP的视频推流](http://www.jianshu.com/p/8ea016b2720e)
+<img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show9.png" width="200"><br/>
 
 ##请下载Demo自己去尝试
 
