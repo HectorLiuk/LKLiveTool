@@ -17,6 +17,22 @@
 		C416C2091D79875500C0765F /* FFRing.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C1F71D79875500C0765F /* FFRing.png */; };
 		C416C20A1D79875500C0765F /* FFTspark.png in Resources */ = {isa = PBXBuildFile; fileRef = C416C1F81D79875500C0765F /* FFTspark.png */; };
 		C416C2131D7987BA00C0765F /* InfoPlayerShowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416C2121D7987BA00C0765F /* InfoPlayerShowView.swift */; };
+		C43A18A31D9A643C00A47323 /* BarrageCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18821D9A643C00A47323 /* BarrageCanvas.m */; };
+		C43A18A41D9A643C00A47323 /* BarrageClock.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18841D9A643C00A47323 /* BarrageClock.m */; };
+		C43A18A51D9A643C00A47323 /* BarrageDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18861D9A643C00A47323 /* BarrageDescriptor.m */; };
+		C43A18A61D9A643C00A47323 /* BarrageDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18881D9A643C00A47323 /* BarrageDispatcher.m */; };
+		C43A18A71D9A643C00A47323 /* BarrageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A188A1D9A643C00A47323 /* BarrageRenderer.m */; };
+		C43A18A81D9A643C00A47323 /* BarrageSpriteFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A188C1D9A643C00A47323 /* BarrageSpriteFactory.m */; };
+		C43A18A91D9A643C00A47323 /* BarrageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18901D9A643C00A47323 /* BarrageLoader.m */; };
+		C43A18AA1D9A643C00A47323 /* BarrageFloatImageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18931D9A643C00A47323 /* BarrageFloatImageSprite.m */; };
+		C43A18AB1D9A643C00A47323 /* BarrageFloatSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18951D9A643C00A47323 /* BarrageFloatSprite.m */; };
+		C43A18AC1D9A643C00A47323 /* BarrageFloatTextSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18971D9A643C00A47323 /* BarrageFloatTextSprite.m */; };
+		C43A18AD1D9A643C00A47323 /* BarrageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18991D9A643C00A47323 /* BarrageSprite.m */; };
+		C43A18AE1D9A643C00A47323 /* BarrageSpriteUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A189C1D9A643C00A47323 /* BarrageSpriteUtility.m */; };
+		C43A18AF1D9A643C00A47323 /* BarrageWalkImageSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A189E1D9A643C00A47323 /* BarrageWalkImageSprite.m */; };
+		C43A18B01D9A643C00A47323 /* BarrageWalkSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18A01D9A643C00A47323 /* BarrageWalkSprite.m */; };
+		C43A18B11D9A643C00A47323 /* BarrageWalkTextSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18A21D9A643C00A47323 /* BarrageWalkTextSprite.m */; };
+		C43A18CD1D9A6B9100A47323 /* NSSafeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C43A18CC1D9A6B9100A47323 /* NSSafeObject.m */; };
 		C44C0CEC1D7442F70050A648 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CDF1D7442C80050A648 /* Alamofire.framework */; };
 		C44C0CED1D7442F70050A648 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CDF1D7442C80050A648 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C44C0D081D7443F80050A648 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C44C0CFB1D7443E00050A648 /* SnapKit.framework */; };
@@ -516,6 +532,40 @@
 		C416C1F71D79875500C0765F /* FFRing.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FFRing.png; sourceTree = "<group>"; };
 		C416C1F81D79875500C0765F /* FFTspark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FFTspark.png; sourceTree = "<group>"; };
 		C416C2121D7987BA00C0765F /* InfoPlayerShowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoPlayerShowView.swift; sourceTree = "<group>"; };
+		C43A18811D9A643C00A47323 /* BarrageCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageCanvas.h; sourceTree = "<group>"; };
+		C43A18821D9A643C00A47323 /* BarrageCanvas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageCanvas.m; sourceTree = "<group>"; };
+		C43A18831D9A643C00A47323 /* BarrageClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageClock.h; sourceTree = "<group>"; };
+		C43A18841D9A643C00A47323 /* BarrageClock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageClock.m; sourceTree = "<group>"; };
+		C43A18851D9A643C00A47323 /* BarrageDescriptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageDescriptor.h; sourceTree = "<group>"; };
+		C43A18861D9A643C00A47323 /* BarrageDescriptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageDescriptor.m; sourceTree = "<group>"; };
+		C43A18871D9A643C00A47323 /* BarrageDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageDispatcher.h; sourceTree = "<group>"; };
+		C43A18881D9A643C00A47323 /* BarrageDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageDispatcher.m; sourceTree = "<group>"; };
+		C43A18891D9A643C00A47323 /* BarrageRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageRenderer.h; sourceTree = "<group>"; };
+		C43A188A1D9A643C00A47323 /* BarrageRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageRenderer.m; sourceTree = "<group>"; };
+		C43A188B1D9A643C00A47323 /* BarrageSpriteFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSpriteFactory.h; sourceTree = "<group>"; };
+		C43A188C1D9A643C00A47323 /* BarrageSpriteFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageSpriteFactory.m; sourceTree = "<group>"; };
+		C43A188D1D9A643C00A47323 /* BarrageHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageHeader.h; sourceTree = "<group>"; };
+		C43A188F1D9A643C00A47323 /* BarrageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageLoader.h; sourceTree = "<group>"; };
+		C43A18901D9A643C00A47323 /* BarrageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageLoader.m; sourceTree = "<group>"; };
+		C43A18921D9A643C00A47323 /* BarrageFloatImageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageFloatImageSprite.h; sourceTree = "<group>"; };
+		C43A18931D9A643C00A47323 /* BarrageFloatImageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageFloatImageSprite.m; sourceTree = "<group>"; };
+		C43A18941D9A643C00A47323 /* BarrageFloatSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageFloatSprite.h; sourceTree = "<group>"; };
+		C43A18951D9A643C00A47323 /* BarrageFloatSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageFloatSprite.m; sourceTree = "<group>"; };
+		C43A18961D9A643C00A47323 /* BarrageFloatTextSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageFloatTextSprite.h; sourceTree = "<group>"; };
+		C43A18971D9A643C00A47323 /* BarrageFloatTextSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageFloatTextSprite.m; sourceTree = "<group>"; };
+		C43A18981D9A643C00A47323 /* BarrageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSprite.h; sourceTree = "<group>"; };
+		C43A18991D9A643C00A47323 /* BarrageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageSprite.m; sourceTree = "<group>"; };
+		C43A189A1D9A643C00A47323 /* BarrageSpriteProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSpriteProtocol.h; sourceTree = "<group>"; };
+		C43A189B1D9A643C00A47323 /* BarrageSpriteUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageSpriteUtility.h; sourceTree = "<group>"; };
+		C43A189C1D9A643C00A47323 /* BarrageSpriteUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageSpriteUtility.m; sourceTree = "<group>"; };
+		C43A189D1D9A643C00A47323 /* BarrageWalkImageSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageWalkImageSprite.h; sourceTree = "<group>"; };
+		C43A189E1D9A643C00A47323 /* BarrageWalkImageSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageWalkImageSprite.m; sourceTree = "<group>"; };
+		C43A189F1D9A643C00A47323 /* BarrageWalkSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageWalkSprite.h; sourceTree = "<group>"; };
+		C43A18A01D9A643C00A47323 /* BarrageWalkSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageWalkSprite.m; sourceTree = "<group>"; };
+		C43A18A11D9A643C00A47323 /* BarrageWalkTextSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarrageWalkTextSprite.h; sourceTree = "<group>"; };
+		C43A18A21D9A643C00A47323 /* BarrageWalkTextSprite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarrageWalkTextSprite.m; sourceTree = "<group>"; };
+		C43A18CB1D9A6B9100A47323 /* NSSafeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSafeObject.h; sourceTree = "<group>"; };
+		C43A18CC1D9A6B9100A47323 /* NSSafeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSSafeObject.m; sourceTree = "<group>"; };
 		C44C0CD31D7442C80050A648 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		C44C0CF01D7443E00050A648 /* SnapKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SnapKit.xcodeproj; path = "SnapKit-develop/SnapKit.xcodeproj"; sourceTree = "<group>"; };
 		C44C0D0E1D7446A40050A648 /* ImportHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportHeader.swift; sourceTree = "<group>"; };
@@ -1046,6 +1096,79 @@
 				C49523BF1D7D5BE900CA143C /* YanHuaView.m */,
 			);
 			path = "烟花";
+			sourceTree = "<group>";
+		};
+		C43A187F1D9A643C00A47323 /* BarrageRenderer */ = {
+			isa = PBXGroup;
+			children = (
+				C43A18CA1D9A6B9100A47323 /* SafeObject */,
+				C43A18801D9A643C00A47323 /* BarrageEngine */,
+				C43A188D1D9A643C00A47323 /* BarrageHeader.h */,
+				C43A188E1D9A643C00A47323 /* BarrageLoader */,
+				C43A18911D9A643C00A47323 /* BarrageSprite */,
+			);
+			path = BarrageRenderer;
+			sourceTree = "<group>";
+		};
+		C43A18801D9A643C00A47323 /* BarrageEngine */ = {
+			isa = PBXGroup;
+			children = (
+				C43A18811D9A643C00A47323 /* BarrageCanvas.h */,
+				C43A18821D9A643C00A47323 /* BarrageCanvas.m */,
+				C43A18831D9A643C00A47323 /* BarrageClock.h */,
+				C43A18841D9A643C00A47323 /* BarrageClock.m */,
+				C43A18851D9A643C00A47323 /* BarrageDescriptor.h */,
+				C43A18861D9A643C00A47323 /* BarrageDescriptor.m */,
+				C43A18871D9A643C00A47323 /* BarrageDispatcher.h */,
+				C43A18881D9A643C00A47323 /* BarrageDispatcher.m */,
+				C43A18891D9A643C00A47323 /* BarrageRenderer.h */,
+				C43A188A1D9A643C00A47323 /* BarrageRenderer.m */,
+				C43A188B1D9A643C00A47323 /* BarrageSpriteFactory.h */,
+				C43A188C1D9A643C00A47323 /* BarrageSpriteFactory.m */,
+			);
+			path = BarrageEngine;
+			sourceTree = "<group>";
+		};
+		C43A188E1D9A643C00A47323 /* BarrageLoader */ = {
+			isa = PBXGroup;
+			children = (
+				C43A188F1D9A643C00A47323 /* BarrageLoader.h */,
+				C43A18901D9A643C00A47323 /* BarrageLoader.m */,
+			);
+			path = BarrageLoader;
+			sourceTree = "<group>";
+		};
+		C43A18911D9A643C00A47323 /* BarrageSprite */ = {
+			isa = PBXGroup;
+			children = (
+				C43A18921D9A643C00A47323 /* BarrageFloatImageSprite.h */,
+				C43A18931D9A643C00A47323 /* BarrageFloatImageSprite.m */,
+				C43A18941D9A643C00A47323 /* BarrageFloatSprite.h */,
+				C43A18951D9A643C00A47323 /* BarrageFloatSprite.m */,
+				C43A18961D9A643C00A47323 /* BarrageFloatTextSprite.h */,
+				C43A18971D9A643C00A47323 /* BarrageFloatTextSprite.m */,
+				C43A18981D9A643C00A47323 /* BarrageSprite.h */,
+				C43A18991D9A643C00A47323 /* BarrageSprite.m */,
+				C43A189A1D9A643C00A47323 /* BarrageSpriteProtocol.h */,
+				C43A189B1D9A643C00A47323 /* BarrageSpriteUtility.h */,
+				C43A189C1D9A643C00A47323 /* BarrageSpriteUtility.m */,
+				C43A189D1D9A643C00A47323 /* BarrageWalkImageSprite.h */,
+				C43A189E1D9A643C00A47323 /* BarrageWalkImageSprite.m */,
+				C43A189F1D9A643C00A47323 /* BarrageWalkSprite.h */,
+				C43A18A01D9A643C00A47323 /* BarrageWalkSprite.m */,
+				C43A18A11D9A643C00A47323 /* BarrageWalkTextSprite.h */,
+				C43A18A21D9A643C00A47323 /* BarrageWalkTextSprite.m */,
+			);
+			path = BarrageSprite;
+			sourceTree = "<group>";
+		};
+		C43A18CA1D9A6B9100A47323 /* SafeObject */ = {
+			isa = PBXGroup;
+			children = (
+				C43A18CB1D9A6B9100A47323 /* NSSafeObject.h */,
+				C43A18CC1D9A6B9100A47323 /* NSSafeObject.m */,
+			);
+			path = SafeObject;
 			sourceTree = "<group>";
 		};
 		C44C0CD41D7442C80050A648 /* Products */ = {
@@ -1831,6 +1954,7 @@
 		C48907E81D74319700B9B0DB /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				C43A187F1D9A643C00A47323 /* BarrageRenderer */,
 				C473F46E1D7EBEE800F14C7B /* pili-librtmp.framework */,
 				C473F25B1D7E631500F14C7B /* GPUImage */,
 				C473F2021D7E60BF00F14C7B /* LFLiveKit */,
@@ -2249,6 +2373,7 @@
 				C473F3EB1D7E631500F14C7B /* GPUImageFilter.m in Sources */,
 				C473F3CD1D7E631500F14C7B /* GPUImageChromaKeyBlendFilter.m in Sources */,
 				C473F3F61D7E631500F14C7B /* GPUImageGrayscaleFilter.m in Sources */,
+				C43A18CD1D9A6B9100A47323 /* NSSafeObject.m in Sources */,
 				C44C0D771D757F940050A648 /* MainTabBarController.swift in Sources */,
 				C473F3C31D7E631500F14C7B /* GPUImageAmatorkaFilter.m in Sources */,
 				C44C0D9B1D76BBAF0050A648 /* HomeModel.swift in Sources */,
@@ -2257,6 +2382,7 @@
 				C473F4521D7E631500F14C7B /* GPUImageThresholdSketchFilter.m in Sources */,
 				C473F4341D7E631500F14C7B /* GPUImageRGBDilationFilter.m in Sources */,
 				C473F3BE1D7E631500F14C7B /* GPUImage3x3ConvolutionFilter.m in Sources */,
+				C43A18B11D9A643C00A47323 /* BarrageWalkTextSprite.m in Sources */,
 				C473F4081D7E631500F14C7B /* GPUImageKuwaharaRadius3Filter.m in Sources */,
 				C44C0D931D76BB8C0050A648 /* Reflect+Parse.swift in Sources */,
 				C473F24E1D7E60BF00F14C7B /* LFStreamRtmpSocket.m in Sources */,
@@ -2266,6 +2392,7 @@
 				C473F24B1D7E60BF00F14C7B /* LFLiveStreamInfo.m in Sources */,
 				C473F3EE1D7E631500F14C7B /* GPUImageFourInputFilter.m in Sources */,
 				C473F2461D7E60BF00F14C7B /* LFGPUImageEmptyFilter.m in Sources */,
+				C43A18AA1D9A643C00A47323 /* BarrageFloatImageSprite.m in Sources */,
 				C473F3E71D7E631500F14C7B /* GPUImageExclusionBlendFilter.m in Sources */,
 				C473F4101D7E631500F14C7B /* GPUImageLookupFilter.m in Sources */,
 				C473F3D51D7E631500F14C7B /* GPUImageColorLocalBinaryPatternFilter.m in Sources */,
@@ -2294,7 +2421,9 @@
 				C473F4411D7E631500F14C7B /* GPUImageSmoothToonFilter.m in Sources */,
 				C473F4271D7E631500F14C7B /* GPUImageParallelCoordinateLineTransformFilter.m in Sources */,
 				C473F3C51D7E631500F14C7B /* GPUImageAverageLuminanceThresholdFilter.m in Sources */,
+				C43A18B01D9A643C00A47323 /* BarrageWalkSprite.m in Sources */,
 				C473F4351D7E631500F14C7B /* GPUImageRGBErosionFilter.m in Sources */,
+				C43A18AC1D9A643C00A47323 /* BarrageFloatTextSprite.m in Sources */,
 				C473F4551D7E631500F14C7B /* GPUImageToonFilter.m in Sources */,
 				C473F42F1D7E631500F14C7B /* GPUImagePosterizeFilter.m in Sources */,
 				C473F4361D7E631500F14C7B /* GPUImageRGBFilter.m in Sources */,
@@ -2339,8 +2468,11 @@
 				C473F3DB1D7E631500F14C7B /* GPUImageCropFilter.m in Sources */,
 				C473F4481D7E631500F14C7B /* GPUImageSphereRefractionFilter.m in Sources */,
 				C473F44F1D7E631500F14C7B /* GPUImageThreeInputFilter.m in Sources */,
+				C43A18AB1D9A643C00A47323 /* BarrageFloatSprite.m in Sources */,
 				C473F3C01D7E631500F14C7B /* GPUImageAdaptiveThresholdFilter.m in Sources */,
 				C473F4591D7E631500F14C7B /* GPUImageTwoPassFilter.m in Sources */,
+				C43A18A81D9A643C00A47323 /* BarrageSpriteFactory.m in Sources */,
+				C43A18A51D9A643C00A47323 /* BarrageDescriptor.m in Sources */,
 				C416C1CA1D794EB100C0765F /* Color.swift in Sources */,
 				C44C0D751D757C880050A648 /* MyViewController.swift in Sources */,
 				C473F4041D7E631500F14C7B /* GPUImageHueFilter.m in Sources */,
@@ -2370,7 +2502,9 @@
 				C473F23E1D7E60BF00F14C7B /* LFNALUnit.cpp in Sources */,
 				C473F4251D7E631500F14C7B /* GPUImageOutput.m in Sources */,
 				C416C1CB1D794EB100C0765F /* Loggerithm.swift in Sources */,
+				C43A18A71D9A643C00A47323 /* BarrageRenderer.m in Sources */,
 				C473F42E1D7E631500F14C7B /* GPUImagePolkaDotFilter.m in Sources */,
+				C43A18AD1D9A643C00A47323 /* BarrageSprite.m in Sources */,
 				C473F4051D7E631500F14C7B /* GPUImageiOSBlurFilter.m in Sources */,
 				C473F41A1D7E631500F14C7B /* GPUImageMosaicFilter.m in Sources */,
 				C44C0D491D744D300050A648 /* DGElasticPullToRefreshLoadingView.swift in Sources */,
@@ -2398,6 +2532,7 @@
 				C473F3D81D7E631500F14C7B /* GPUImageColourFASTFeatureDetector.m in Sources */,
 				C473F3C61D7E631500F14C7B /* GPUImageBilateralFilter.m in Sources */,
 				C473F3CB1D7E631500F14C7B /* GPUImageCannyEdgeDetectionFilter.m in Sources */,
+				C43A18A61D9A643C00A47323 /* BarrageDispatcher.m in Sources */,
 				C473F3EC1D7E631500F14C7B /* GPUImageFilterGroup.m in Sources */,
 				C473F3ED1D7E631500F14C7B /* GPUImageFilterPipeline.m in Sources */,
 				C473F2411D7E60BF00F14C7B /* LFHardwareAudioEncoder.m in Sources */,
@@ -2440,6 +2575,7 @@
 				C473F4661D7E631500F14C7B /* GPUImageContext.m in Sources */,
 				C473F4211D7E631500F14C7B /* GPUImageNonMaximumSuppressionFilter.m in Sources */,
 				C473F4121D7E631500F14C7B /* GPUImageLuminanceRangeFilter.m in Sources */,
+				C43A18AF1D9A643C00A47323 /* BarrageWalkImageSprite.m in Sources */,
 				C473F24C1D7E60BF00F14C7B /* LFVideoFrame.m in Sources */,
 				C473F23B1D7E60BF00F14C7B /* LFVideoCapture.m in Sources */,
 				C473F3D31D7E631500F14C7B /* GPUImageColorDodgeBlendFilter.m in Sources */,
@@ -2454,8 +2590,10 @@
 				C49523C01D7D5BE900CA143C /* YanHuaView.m in Sources */,
 				C473F3DC1D7E631500F14C7B /* GPUImageCrosshairGenerator.m in Sources */,
 				C473F4231D7E631500F14C7B /* GPUImageOpacityFilter.m in Sources */,
+				C43A18A31D9A643C00A47323 /* BarrageCanvas.m in Sources */,
 				C44C0D971D76BB8C0050A648 /* Reflect+Property.swift in Sources */,
 				C473F41F1D7E631500F14C7B /* GPUImageMultiplyBlendFilter.m in Sources */,
+				C43A18AE1D9A643C00A47323 /* BarrageSpriteUtility.m in Sources */,
 				C473F4281D7E631500F14C7B /* GPUImagePerlinNoiseFilter.m in Sources */,
 				C473F4031D7E631500F14C7B /* GPUImageHueBlendFilter.m in Sources */,
 				C473F4291D7E631500F14C7B /* GPUImagePinchDistortionFilter.m in Sources */,
@@ -2468,8 +2606,10 @@
 				C44C0D921D76BB8C0050A648 /* Reflect+ArcFile.swift in Sources */,
 				C473F3DD1D7E631500F14C7B /* GPUImageCrosshatchFilter.m in Sources */,
 				C44C0D841D76B5960050A648 /* NetWork.swift in Sources */,
+				C43A18A91D9A643C00A47323 /* BarrageLoader.m in Sources */,
 				C473F3E51D7E631500F14C7B /* GPUImageEmbossFilter.m in Sources */,
 				C473F4071D7E631500F14C7B /* GPUImageKuwaharaFilter.m in Sources */,
+				C43A18A41D9A643C00A47323 /* BarrageClock.m in Sources */,
 				C473F3D41D7E631500F14C7B /* GPUImageColorInvertFilter.m in Sources */,
 				C416C1EC1D7968F500C0765F /* PlayerShowInfoView.swift in Sources */,
 				C473F4381D7E631500F14C7B /* GPUImageSaturationBlendFilter.m in Sources */,

@@ -46,7 +46,17 @@ class InfoPlayerShowView: UIView {
     
     var array: [String]!
     
+    var timer : NSTimer!
     
+    lazy var renderer : BarrageRenderer = {
+        let renderer = BarrageRenderer()
+        renderer.canvasMargin = UIEdgeInsetsMake(screenWidth * 0.3, 10, 10, 10);
+        
+        return renderer
+    }()
+    
+    var datas = [String]()
+        
     
     var homeData : HomeModel? {
         didSet {
@@ -76,6 +86,18 @@ class InfoPlayerShowView: UIView {
 
         loveGift = NSTimer.scheduledTimerWithTimeInterval(0.25, target: self, selector: #selector(InfoPlayerShowView.showLoveGift), userInfo: nil, repeats: true)
         
+        
+//        for _ in 0  ..< 1000  {
+//            datas.append("ssssssssssssssss")
+//        }
+        
+        
+        
+        self.addSubview(renderer.view)
+        renderer.start()
+        //制造弹幕
+        let saft = NSSafeObject(object: self, withSelector: #selector(autoSendBarrage))
+        timer = NSTimer(timeInterval: 0.5, target: saft, selector: #selector(NSSafeObject.excute), userInfo: nil, repeats: true)
         
         
     }
@@ -131,6 +153,24 @@ class InfoPlayerShowView: UIView {
             player!.play()
         }
     }
+    
+    func autoSendBarrage() {
+        
+        if renderer.spritesNumberWithName(nil) <= 50 {
+            renderer.receive(danMuTextParams(BarrageWalkDirection.R2L))
+        }
+    }
+    
+    //生成弹幕
+    func danMuTextParams(direction : BarrageWalkDirection) -> BarrageDescriptor {
+        let descriptor = BarrageDescriptor()
+        descriptor.spriteName = NSStringFromClass(BarrageWalkTextSprite);
+        descriptor.params["text"] = "ssssssss"
+        descriptor.params["textColor"] = UIColor.redColor();
+        
+        return descriptor
+    }
+    
     
     
     

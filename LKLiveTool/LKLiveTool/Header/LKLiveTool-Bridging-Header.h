@@ -7,3 +7,5 @@
 #import "YanHuaView.h"
 #import "UIDevice+SLExtension.h"
 #import "LFLiveKit.h"
+#import "BarrageRenderer.h"
+#import "NSSafeObject.h"
