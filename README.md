@@ -1,11 +1,11 @@
-#####运行此程序报错（报缺少IJKMediaFramework.framework的错误），请下载[IJKMediaFramework.framework](https://pan.baidu.com/s/1eSLRmme)解压IJKMediaFramework.framework.zip后直接拖进工程运行即可。
+##### 运行此程序报错（报缺少IJKMediaFramework.framework的错误），请下载[IJKMediaFramework.framework](https://pan.baidu.com/s/1eSLRmme)解压IJKMediaFramework.framework.zip后直接拖进工程运行即可。
 # LKLiveTool
 #### 此APP使用`OC`和`Swift`混编,结构使用SB搭建更能直观展现项目结构。其中`IJKMediaFramework`和`pili-librtmp`使用OC桥接swift。通过抓取映客的接口实现直播，推流使用的搭建本地服务器实现推流。没有完全照搬映客APP,主要是为了熟悉Swift下常用三方库的使用。所以此App不是高仿只是Demo但是基本直播功能均已实现。
 #### 最近公司活较少经常跟新后期也会不定时添加新功能。
 #### 在写之前参考了很多前辈的代码以及对调研直播技术，对想写直播同学们提个建议一定要对整体有一个大概流程了解。本人在不断挖坑填坑中(下方有关直播资料链接地址)。
 
 ## 技术点介绍：
-####直播可以分为：采集，处理(美颜...)，编码，传输, 服务器处理，解码渲染
+#### 直播可以分为：采集，处理(美颜...)，编码，传输, 服务器处理，解码渲染
 - 采集: iOS系统因为软硬件适配性比较好, 只要能熟练运用三方库就好。
 - 处理: 美颜,模糊效果, 水印...,直接运用[GPUImage](https://github.com/BradLarson/GPUImage)。
 - 编码: 重难点在于要在分辨率，帧率，码率，GOP等参数设计上找到最佳平衡点[I,P,B帧和PTS,DTS的关系,GOP相关](http://blog.csdn.net/wudebao5220150/article/details/13811321)。 
@@ -14,8 +14,8 @@
 - 解码渲染: 从服务器获取数据播放，这里就会遇到软硬解码问题[区别](http://blog.csdn.net/xiangjai/article/details/12653203)，还有音画同步。
 
 
-##两大模块
-###1. 播放端
+## 两大模块
+### 1. 播放端
 - 播放器采用[ijkplayer](https://github.com/Bilibili/ijkplayer),是基于FFmpeg的跨平台播放器针对RTMP优化，开源项目已经被多个App使用，其中映客、美拍和斗鱼使用了。这是已经打包好的直接导入就好[IJKMediaFramework.framework](https://pan.baidu.com/s/1eSLRmme)
 - 接口采用映客的只支持刷新(最置顶5条)，没有抓到加载接口。。。。。。
 
@@ -27,7 +27,7 @@
 <img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show3.png" width="200">
 <img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/show4.png" width="200"><br/>
 
-###2. 采集端
+### 2. 采集端
 - 技术点特别多但是三方框架方法已经写好直接调用就好注释还是中文的。[LFLiveKit](https://github.com/LaiFengiOS/LFLiveKit)
 - 关于本地服务器的搭建[快速集成iOS基于RTMP的视频推流](http://www.jianshu.com/p/8ea016b2720e)
 - 美颜模糊处理。
@@ -35,11 +35,11 @@
 
   <img src="https://github.com/HectorLiuk/LKLiveTool/blob/master/Show9.PNG" width="200">
 
-##请下载Demo自己去尝试
+## 请下载Demo自己去尝试
 
 
 
-##链接
+## 链接
 - [iOS实时美颜滤镜是怎样炼成的](http://www.open-open.com/lib/view/open1463108934371.html)
 - [FFMPEG视音频编解码零基础学习方法](http://blog.csdn.net/leixiaohua1020/article/details/15811977/)
 - [移动直播技术秒开优化经验](http://weibo.com/ttarticle/p/show?id=2309403969318634263193)
